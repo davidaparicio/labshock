@@ -1,0 +1,57 @@
+version: '3.9'
+
+networks:
+  l2_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.2.0/24
+  l3_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.3.0/24
+
+services:
+  router:
+    build: ./router/
+    privileged: true
+    restart: unless-stopped
+    networks:
+      l2_network:
+        ipv4_address: 192.168.2.254
+      l3_network:
+        ipv4_address: 192.168.3.254
+    mem_limit: 256m
+
+  scada:
+    build: ./scada/
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - ./scada/appdata:/usr/src/app/FUXA/server/_appdata
+    ports:
+      - '1881:1881'
+    mem_limit: 1024m
+    networks:
+      l3_network:
+        ipv4_address: 192.168.3.20
+    mem_limit: 512m
+    logging:
+      driver: none
+      
+  plc:
+    build: ./plc/
+    privileged: true
+    restart: unless-stopped
+    networks:
+      l2_network:
+        ipv4_address: 192.168.2.10
+    volumes:
+      - ./plc/appdata/openplc.db:/workdir/webserver/openplc.db
+      - ./plc/appdata/active_program:/workdir/webserver/active_program
+      - ./plc/appdata/st_files:/workdir/webserver/st_files
+    ports:
+      - "8080:8080"
+    mem_limit: 512m
+    cpus: "1"
