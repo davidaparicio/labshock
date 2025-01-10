@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.linkedin.com/in/zakharb/labshock">
+  <a href="https://github.com/zakharb/labshock">
   <img src="img/logo.png" alt="logo" />
 </p>
 
