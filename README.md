@@ -1,11 +1,12 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/101948294/216656237-a8f4f931-c9da-496e-9c65-b28c5b34caa4.png" alt="animated" />
+  <a href="https://www.linkedin.com/in/zakharb/labshock">
+  <img src="img/logo.png" alt="logo" />
 </p>
 
 <p align="center">
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Learn+ICS+Networks+Today.;Test+OT+SIEM+Solutions.;Simulate+SCADA+and+PLCs." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Learn+ICS+Networks+Today;Test+OT+SIEM+Solutions;Simulate+SCADA+and+PLCs" alt="Typing SVG" />
   </a>
 
 <p align="center">
@@ -15,9 +16,6 @@
   <img src="https://img.shields.io/badge/openplc-3-yellow" height="20"/>
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/101948294/216656246-f32e5d5d-8346-417e-a651-c5f945a1172b.gif" alt="animated" />
-</p>
 
 
 ## :yellow_square: Getting Started
