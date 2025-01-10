@@ -11,8 +11,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0-yellow" height="20"/>
   <img src="https://img.shields.io/badge/python-3.11-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/fuxa-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/openplc-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/fuxa-1.22-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/openplc-3-yellow" height="20"/>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## :yellow_square: Getting Started
 
-[Labshock](https://github.com/zakharb/labshock) is the ICS Lab for learning & testing OT SIEM solutions.
+[Labshock](https://github.com/zakharb/labshock) is the ICS Lab for learning & testing OT SIEM solutions. It provides a versatile platform for both educational purposes and advanced OT SIEM testing. The lab is designed to emulate real-world ICS environments, allowing you to simulate multivendor PLC setups, configure SCADA systems & create Detection and Response strategies. The main purpose of Labshock is multi OT SIEM testing, enabling simultaneous evaluation of different SIEM solutions in real time.
 
 Labshock is designed to provide a hands-on environment for:
 - configuring PLC
@@ -33,12 +33,12 @@ Labshock is designed to provide a hands-on environment for:
 - creating OT SIEM correlation rules
 - practicing Detection & Response techniques
 
-**BUT the main purpose of Labshock is multi OT SIEM testing**
+You can simultaneous test different SIEM solutions in the context of ICS.
 
-It allows for simultaneous testing of different SIEM solutions in the context of ICS.
+<br/><br/><br/>
 
 
-### Requirements
+## :yellow_square: Requirements
 
 Install [docker](https://www.docker.com/)
 
@@ -46,7 +46,11 @@ Install [docker-compose](https://docs.docker.com/compose/install/)
 
 Only Docker, no additional libraries are required.
 
-### Running
+
+<br/><br/><br/>
+
+
+## :yellow_square: Run
 
 Clone the repository
  ```
@@ -56,16 +60,24 @@ cd labshock/src
 
 Run docker-compose
 ```
-docker-compose up --build --force --remove-orphans
+docker-compose up
 ```
+
+<br/><br/><br/>
+
 
 ## :yellow_square: Usage
 
-SCADA: http://localhost:1881
-PLC: http://localhost:8080
-Engineering Station: http://localhost:8080
+```python
+SCADA      # http://localhost:1881
+PLC        # http://localhost:8080
+EWS        # http://localhost:8080
+```
 
-### Examples
+<br/><br/><br/>
+
+
+## :yellow_square: Examples
 
 SCADA
 
@@ -74,15 +86,41 @@ PLC
 Engineering Station
 
 
+<br/><br/><br/>
+
+
+## :yellow_square: What inside
+```python
+SCADA              # project FUXA - https://frangoteam.org
+PLC                # project OpenPLC - https://autonomylogic.com
+EWS & OWS          # Windows Trial - https://www.microsoft.com
+FW                 # Iptables - https://en.wikipedia.org/wiki/Iptables
+SWITCH             # Custom
+TRANSFER           # FTP
+REMOTE             # RDP
+SIEM               # Multi Vendor
+IDS                # Multi Vendor
+And more...
+```
+
+<br/><br/><br/>
+
+
 ## :yellow_square: Versioning
 
-Using [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zakharb/syslogen/tags). 
+Using [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zakharb/labshock/tags). 
+
+<br/><br/><br/>
+
 
 ## :yellow_square: Authors
 
 * **Zakhar Bernhardt** - *Initial work* - [Ze](https://www.linkedin.com/in/zakharb/)
 
 See also the list of [contributors](https://github.com/zakharb/labshock/contributors) who participated in this project.
+
+<br/><br/><br/>
+
 
 ## :yellow_square: License
 
