@@ -21,7 +21,7 @@
 
 ## :yellow_square: Getting Started
 
-[Labshock](https://github.com/zakharb/labshock) is the ICS Lab for learning & testing OT SIEM solutions. It provides a versatile platform for both educational purposes and advanced OT SIEM testing. The lab is designed to emulate real-world ICS environments, allowing you to simulate multivendor PLC setups, configure SCADA systems & create Detection and Response strategies. The main purpose of Labshock is multi OT SIEM testing, enabling simultaneous evaluation of different SIEM solutions in real time.
+[Labshock](https://github.com/zakharb/labshock) is the Virtual Lab for learning ICS. It provides a versatile platform for both educational purposes and advanced OT SIEM testing. The lab is designed to emulate real-world ICS environments, allowing you to simulate multivendor PLC setups, configure SCADA systems & create Detection and Response strategies. The main purpose of Labshock is multi OT SIEM testing, enabling simultaneous evaluation of different SIEM solutions in real time.
 
 Labshock is designed to provide a hands-on environment for:
 - configuring PLC
@@ -43,23 +43,33 @@ Install [docker](https://www.docker.com/)
 
 Install [docker-compose](https://docs.docker.com/compose/install/)
 
+Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
 Only Docker, no additional libraries are required.
 
 
 <br/><br/><br/>
 
 
-## :yellow_square: Run
+## :yellow_square: Install & Run & Update
 
-Clone the repository
+Install
  ```
 git clone https://github.com/zakharb/labshock.git
 cd labshock/labshock
+docker-compose build
  ```
 
-Run docker-compose
+Run
 ```
 docker-compose up
+```
+
+Update
+ ```
+git pull
+cd labshock
+docker-compose build
 ```
 
 <br/><br/><br/>
