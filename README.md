@@ -72,6 +72,10 @@ cd labshock
 docker-compose build
 ```
 
+<p align="center">
+  <img src="img/install.gif" alt="animated" />
+</p>
+
 <br/><br/><br/>
 
 
@@ -87,9 +91,16 @@ PLC        # http://localhost:8080
 
 ## :yellow_square: Examples
 
-SCADA
-
 PLC
+<p align="center">
+  <img src="img/plc.gif" alt="animated" />
+</p>
+
+SCADA
+<p align="center">
+  <img src="img/scada.gif" alt="animated" />
+</p>
+
 
 
 <br/><br/><br/>
