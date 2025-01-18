@@ -83,7 +83,7 @@ docker-compose build
 
 ```python
 SCADA      # http://localhost:1881
-PLC        # http://localhost:8080
+PLC        # http://localhost:8080, user/pwd: openplc/openplc
 ```
 
 <br/><br/><br/>
