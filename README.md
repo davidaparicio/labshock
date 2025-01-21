@@ -34,6 +34,10 @@ Labshock is designed to provide a hands-on environment for:
 
 You can simultaneous test different SIEM solutions in the context of ICS.
 
+<p align="center">
+  <img src="img/lab-diagram.jpeg" alt="lab-diagram" />
+</p>
+
 <br/><br/><br/>
 
 
@@ -73,7 +77,7 @@ docker-compose build
 ```
 
 <p align="center">
-  <img src="img/install.gif" alt="animated" />
+  <img src="img/install.gif" alt="install" />
 </p>
 
 <br/><br/><br/>
@@ -84,6 +88,7 @@ docker-compose build
 ```python
 SCADA      # http://localhost:1881
 PLC        # http://localhost:8080, user/pwd: openplc/openplc
+EWS        # http://localhost:5911, user/pwd: engineer/engineer
 ```
 
 <br/><br/><br/>
@@ -93,12 +98,17 @@ PLC        # http://localhost:8080, user/pwd: openplc/openplc
 
 PLC
 <p align="center">
-  <img src="img/plc.gif" alt="animated" />
+  <img src="img/plc.gif" alt="plc" />
 </p>
 
 SCADA
 <p align="center">
-  <img src="img/scada.gif" alt="animated" />
+  <img src="img/scada.gif" alt="scada" />
+</p>
+
+EWS
+<p align="center">
+  <img src="img/ews.jpeg" alt="ews" />
 </p>
 
 
@@ -110,7 +120,7 @@ SCADA
 ```python
 SCADA              # project FUXA - https://frangoteam.org
 PLC                # project OpenPLC - https://autonomylogic.com
-EWS & OWS          # Windows Trial - https://www.microsoft.com
+EWS & OWS          # Linux, Windows Trial - https://www.microsoft.com
 FW                 # Iptables - https://en.wikipedia.org/wiki/Iptables
 SWITCH             # Custom
 TRANSFER           # FTP
