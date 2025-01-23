@@ -15,7 +15,6 @@ networks:
 services:
   router:
     image: zakharbz/labshock-router:v1.0.0
-    mem_limit: 256m
     privileged: true
     restart: unless-stopped
     networks:
@@ -26,7 +25,6 @@ services:
 
   scada:
     build: ./scada/
-    mem_limit: 1024m
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
@@ -40,7 +38,6 @@ services:
       
   plc:
     build: ./plc/
-    mem_limit: 512m
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
@@ -52,6 +49,20 @@ services:
     volumes:
       - plc-data:/workdir/webserver
 
+  ews:
+    build: ./ews/
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+    networks:
+      l3_network:
+        ipv4_address: 192.168.3.11
+    ports:
+      - "5911:5911"
+    volumes:
+      - ews-data:/home/engineer/
+
 volumes:
   scada-data:
   plc-data:
+  ews-data:
