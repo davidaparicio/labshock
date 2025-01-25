@@ -34,7 +34,9 @@ Labshock is designed to provide a hands-on environment for:
 - creating OT SIEM correlation rules
 - practicing Detection & Response techniques
 
-Find more information on main [OT SIEM Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf).
+Find more Guides on [Wiki](https://github.com/zakharb/labshock/wiki)
+
+Find more information on main [OT SIEM Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf)
 
 Join our [Discord Server](https://github.com/zakharb/labshock) for more information and support!
 <p align="center">
@@ -44,6 +46,8 @@ Join our [Discord Server](https://github.com/zakharb/labshock) for more informat
 
 <br><br>
 ## :yellow_square: Requirements
+
+Use [How to on wiki](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)
 
 Install Docker components, thats all:
 - [Docker](https://www.docker.com/)
