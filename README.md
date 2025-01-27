@@ -217,6 +217,35 @@ To run inside labshock include in `docker-compose.yml` service:
 </p>
 
 <br><br>
+## :yellow_square: Pentest
+
+*Labshock contains modified version of [Kali Linux](https://www.kali.org/)*
+
+Labshock includes Pentest Station tailored for OT and ICS security testing:
+
+- Tools for Modbus, DNP3, IEC 60870-5-104, OPC UA analysis
+- SCADA/PLC fuzzing, packet manipulation, and vulnerability scanning
+- Pre-installed Kali tools like Nmap, Wireshark & Metasploit
+
+Use Cases:
+- Test OT system security and ICS networks
+- Simulate attacks: replay, MITM, command injection
+- Decode and analyze SCADA traffic
+
+Usage:
+```
+ssh pentest@localhost -p 2222
+pwd: pentest
+```
+
+Ready for OT-focused pentesting.
+
+<p align="center">
+  <img src="img/pentest.png" alt="pentest" />
+</p>
+
+
+<br><br>
 ## :yellow_square: Versioning
 
 Using [SemVer](http://semver.org/) for versioning. 
