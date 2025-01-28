@@ -11,7 +11,7 @@
   </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.1-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/version-1.2-yellow" height="20"/>
   <img src="https://img.shields.io/badge/python-3.12-yellow" height="20"/>
   <img src="https://img.shields.io/badge/kali-2025-yellow" height="20"/>
   <img src="https://img.shields.io/badge/fuxa-1.22-yellow" height="20"/>
@@ -51,8 +51,8 @@ Install Docker components, thats all:
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
 
 
-Minimal System Requirements `PLC + SCADA + EWS`:
-- `CPU 1` | `RAM 1G` | `HDD 10G`
+Minimal System Requirements `PLC + SCADA + EWS + Pentest + Switch`:
+- `CPU 2` | `RAM 1G` | `HDD 10G`
 
 <p align="center">
   <img src="img/min-reqs.png" />
