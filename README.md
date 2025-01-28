@@ -11,7 +11,7 @@
   </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.1-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/version-1.2-yellow" height="20"/>
   <img src="https://img.shields.io/badge/python-3.12-yellow" height="20"/>
   <img src="https://img.shields.io/badge/kali-2025-yellow" height="20"/>
   <img src="https://img.shields.io/badge/fuxa-1.22-yellow" height="20"/>
@@ -55,8 +55,8 @@ Install Docker components, thats all:
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
 
 
-Minimal System Requirements `PLC + SCADA + EWS`:
-- `CPU 1` | `RAM 1G` | `HDD 10G`
+Minimal System Requirements `PLC + SCADA + EWS + Pentest + Switch`:
+- `CPU 2` | `RAM 1G` | `HDD 10G`
 
 <p align="center">
   <img src="img/min-reqs.png" />
@@ -219,6 +219,35 @@ To run inside labshock include in `docker-compose.yml` service:
 <p align="center">
   <img src="img/ews-win.png" alt="ews-win" />
 </p>
+
+<br><br>
+## :yellow_square: Pentest
+
+*Labshock contains modified version of [Kali Linux](https://www.kali.org/)*
+
+Labshock includes Pentest Station tailored for OT and ICS security testing:
+
+- Tools for Modbus, DNP3, IEC 60870-5-104, OPC UA analysis
+- SCADA/PLC fuzzing, packet manipulation, and vulnerability scanning
+- Pre-installed Kali tools like Nmap, Wireshark & Metasploit
+
+Use Cases:
+- Test OT system security and ICS networks
+- Simulate attacks: replay, MITM, command injection
+- Decode and analyze SCADA traffic
+
+Usage:
+```
+ssh pentest@localhost -p 2222
+pwd: pentest
+```
+
+Ready for OT-focused pentesting.
+
+<p align="center">
+  <img src="img/pentest.png" alt="pentest" />
+</p>
+
 
 <br><br>
 ## :yellow_square: Versioning
