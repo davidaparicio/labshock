@@ -77,6 +77,7 @@ Update
  ```
 git pull
 cd labshock
+docker-compose down
 docker-compose build
 ```
 
