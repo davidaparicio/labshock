@@ -249,6 +249,35 @@ Ready for OT-focused pentesting.
   <img src="img/pentest.png" alt="pentest" />
 </p>
 
+<br><br>
+🟨 Network Swiftness
+
+Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments.
+
+Features:
+
+- Monitor live network traffic
+- Track active connections
+- Detect and classify protocols
+- Generate network topology maps
+- Capture, analyze and save packets
+- Web based: simple & easy
+
+Use Cases:
+
+- Gain visibility into OT network activity
+- Identify unauthorized connections and protocol anomalies
+- Analyze SCADA/ICS traffic patterns
+- Save packet data for forensic analysis
+
+Usage:
+- open web interface http://localhost:1443
+
+Ready for OT network monitoring and analysis.
+
+<p align="center">
+  <img src="img/ids.png" alt="ids" />
+</p>
 
 <br><br>
 ## :yellow_square: Versioning
