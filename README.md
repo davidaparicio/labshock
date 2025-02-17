@@ -276,7 +276,7 @@ Usage:
 🔒 License: 
 - Network Swiftness is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
-- See [LICENSE_NetworkSwiftness.md](https://github.com/zakharb/labshock/LICENSE_NS.md) for details.
+- See [LICENSE_NS.md](https://github.com/zakharb/labshock/blob/main/LICENSE_NS.md) for details.
 
 Ready for OT network monitoring and analysis.
 
