@@ -284,6 +284,16 @@ Ready for OT network monitoring and analysis.
   <img src="img/ids.png" alt="ids" />
 </p>
 
+### External IDS
+
+Now You cab easily connect other IDS, for example Zeek:
+```
+  ids:
+    image: zeek/zeek:latest
+    network_mode: host
+    command: tail -f /dev/null
+```
+
 <br><br>
 ## :yellow_square: Versioning
 
