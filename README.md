@@ -250,7 +250,7 @@ Ready for OT-focused pentesting.
 </p>
 
 <br><br>
-🟨 Network Swiftness
+## :yellow_square: Network Swiftness
 
 Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments.
 
@@ -272,6 +272,11 @@ Use Cases:
 
 Usage:
 - open web interface http://localhost:1443
+
+🔒 License: 
+- Network Swiftness is for personal, non-commercial use only.
+- Redistribution, modification, or commercial use is prohibited.
+- See [LICENSE_NetworkSwiftness.md](https://github.com/zakharb/labshock/LICENSE_NS.md) for details.
 
 Ready for OT network monitoring and analysis.
 
