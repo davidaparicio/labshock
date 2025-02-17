@@ -14,7 +14,7 @@ networks:
 
 services:
   router:
-    image: zakharbz/labshock-router:v1.0.0
+    build: ./router/
     privileged: true
     restart: unless-stopped
     networks:
@@ -74,6 +74,11 @@ services:
         ipv4_address: 192.168.3.30
     ports:
       - "2222:22"
+
+  ids:
+    build: ./ids/
+    network_mode: host
+    restart: unless-stopped
 
 volumes:
   scada-data:
