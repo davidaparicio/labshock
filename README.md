@@ -273,6 +273,9 @@ Use Cases:
 Usage:
 - open web interface http://localhost:1443
 
+Windows Docker Desktop Users:
+- navigate to Settings > Resources > Network, and check the "Enable host networking" option.
+
 🔒 License: 
 - Network Swiftness is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
