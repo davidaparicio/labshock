@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/zakharb/labshock">
   <img src="img/logo.png" alt="logo" />
@@ -7,7 +6,7 @@
 <p align="center">
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Learn+ICS+Networks+Today;Test+OT+SIEM+Solutions;Simulate+SCADA+and+PLCs" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Learn+ICS+Networks+Today;Pentest+Industrial+Control+Systems;Simulate+SCADA+and+PLCs" alt="Typing SVG" />
   </a>
 
 <p align="center">
@@ -18,29 +17,25 @@
   <img src="https://img.shields.io/badge/openplc-3-yellow" height="20"/>
 </p>
 
+## 🟨 Getting Started  
 
-## :yellow_square: Getting Started
+[Labshock](https://github.com/zakharb/labshock) is a Virtual Lab for learning ICS networks, simulating SCADA and PLCs, and testing OT security. It provides a hands-on environment for both educational purposes and advanced security testing.  
 
-[Labshock](https://github.com/zakharb/labshock) is the Virtual Lab for learning ICS. It provides a versatile platform for both educational purposes and advanced OT SIEM testing. The lab is designed to emulate real-world ICS environments, allowing you to simulate multivendor PLC setups, configure SCADA systems & create Detection and Response strategies. 
+Labshock is designed for:  
+- **Pentesting & Network Monitoring** – Simulate attacks and analyze ICS traffic.  
+- **Configuring PLCs** – Work with OpenPLC and real-world industrial protocols.  
+- **Exploring SCADA Systems** – Set up and interact with SCADA/HMI.  
+- **Emulating Multivendor PLCs** – Test different ICS setups.  
+- **Learning ICS Networks** – Gain real-world networking experience.  
+- **Creating Correlation Rules** – Develop custom detection logic.  
+- **Practicing Detection & Response** – Test security strategies in a controlled lab.  
 
-The main purpose of Labshock is `multi OT SIEM testing`, enabling simultaneous evaluation of different SIEM solutions in real time.
+📖 **Find More Guides** in the [Wiki](https://github.com/zakharb/labshock/wiki).  
+📌 **Learn More about ICS security** in the [ICS Security Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf).  
+💬 **Join Our Community** on [Discord](#) for support and discussions. *(Replace # with the actual invite link!)*  
 
-Labshock is designed to provide a hands-on environment for:
-- configuring PLC
-- learning ICS Networks
-- exploring SCADA systems
-- emulating multivendor PLC
-- pentesting & network monitoring
-- creating OT SIEM correlation rules
-- practicing Detection & Response techniques
-
-Find more Guides on [Wiki](https://github.com/zakharb/labshock/wiki)
-
-Find more information on main [OT SIEM Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf)
-
-Join our [Discord Server](https://github.com/zakharb/labshock) for more information and support!
 <p align="center">
-  <img src="img/lab-diagram.jpeg" alt="lab-diagram" />
+  <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
 </p>
 
 
