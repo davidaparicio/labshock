@@ -32,7 +32,7 @@ Labshock is designed for:
 
 📖 **Find More Guides** in the [Wiki](https://github.com/zakharb/labshock/wiki).  
 📌 **Learn More about ICS security** in the [ICS Security Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf).  
-💬 **Join Our Community** on [Discord](#) for support and discussions. *(Replace # with the actual invite link!)*  
+💬 **Join Our Community** on [Discord](#) for support and discussions.
 
 <p align="center">
   <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
