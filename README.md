@@ -34,10 +34,16 @@ Labshock is designed for:
 📌 **Learn More about ICS security** in the [ICS Security Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf).  
 💬 **Join Our Community** on [Discord](#) for support and discussions.
 
+
 <p align="center">
   <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
 </p>
 
+<br><br>
+## :yellow_square: Support Labshock
+If you find this project useful, please consider helping:
+
+[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 <br><br>
 ## :yellow_square: Requirements
@@ -85,6 +91,7 @@ docker-compose build
 ## :yellow_square: Services
 
 ### What's Inside
+
 ```python
 PLC                # OpenPLC
 SCADA              # FUXA
@@ -106,6 +113,9 @@ And more...
 SCADA      # http://localhost:1881
 PLC        # http://localhost:8080, user/pwd: openplc/openplc
 EWS        # http://localhost:5911/vnc.html, user/pwd: engineer/engineer
+Pentest    # ssh pentest@localhost -p 2222
+IDS        # http://localhost:1443
+Collector  # http://localhost:2443
 ```
 
 
@@ -291,6 +301,41 @@ Now You cab easily connect other IDS, for example Zeek:
     network_mode: host
     command: tail -f /dev/null
 ```
+
+<br><br>
+## :yellow_square: Tidal Collector
+
+Labshock includes Tidal Collector for efficient OT data collection and forwarding.
+
+Features:
+
+- Collect logs and metrics from OT devices
+- Normalize and forward data to SIEM
+- Filter and enrich data before forwarding
+- Lightweight and efficient
+- Web based: simple & easy
+
+Use Cases:
+
+- Centralize OT data collection for analysis
+- Enhance SIEM visibility with OT-specific logs
+- Normalize diverse log formats
+- Reduce noise with smart filtering
+
+Usage:
+
+- open web interface http://localhost:2443
+
+🔒 License:
+
+- Tidal Collector is for personal, non-commercial use only.
+- Redistribution, modification, or commercial use is prohibited.
+- See [LICENSE_NS.md](https://github.com/zakharb/labshock/blob/main/LICENSE_NS.md) for details.
+
+Ready for OT data collection and integration.
+
+<p align="center"> <img src="img/collector.png" alt="collector" /> </p>
+
 
 <br><br>
 ## :yellow_square: Versioning
