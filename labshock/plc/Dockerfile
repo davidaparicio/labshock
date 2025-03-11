@@ -1,4 +1,4 @@
-FROM zakharbz/labshock-plc:v1.0.1
+FROM zakharbz/labshock-plc:v1.1.0
 
 # app data files
 COPY ./appdata/st_files /workdir/webserver/st_files
