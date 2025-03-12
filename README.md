@@ -6,44 +6,50 @@
 <p align="center">
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Learn+ICS+Networks+Today;Pentest+Industrial+Control+Systems;Simulate+SCADA+and+PLCs" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Simulate+Attacks+and+Test+Tools;Train+Teams+and+Research+Threats;No+Expensive+HW+and+Setup+Required" alt="Typing SVG" />
   </a>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.2-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/python-3.12-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/kali-2025-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/fuxa-1.22-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/openplc-3-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/Version-1.4-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/Network Swiftness-1.1-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/Tidal Collector-1.0-yellow" height="20"/>
 </p>
 
-## 🟨 Getting Started  
+<br><br>
+## 🟨 Labshock - Your ICS Security Lab without Cost & Complexity
 
-[Labshock](https://github.com/zakharb/labshock) is a Virtual Lab for learning ICS networks, simulating SCADA and PLCs, and testing OT security. It provides a hands-on environment for both educational purposes and advanced security testing.  
+[Labshock](https://github.com/zakharb/labshock) lets you build and test ICS security labs - without expensive hardware.
 
-Labshock is designed for:  
-- **Pentesting & Network Monitoring** – Simulate attacks and analyze ICS traffic.  
-- **Configuring PLCs** – Work with OpenPLC and real-world industrial protocols.  
-- **Exploring SCADA Systems** – Set up and interact with SCADA/HMI.  
-- **Emulating Multivendor PLCs** – Test different ICS setups.  
-- **Learning ICS Networks** – Gain real-world networking experience.  
-- **Creating Correlation Rules** – Develop custom detection logic.  
-- **Practicing Detection & Response** – Test security strategies in a controlled lab.  
+💛 If you find Labshock useful, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
-📖 **Find More Guides** in the [Wiki](https://github.com/zakharb/labshock/wiki).  
-📌 **Learn More about ICS security** in the [ICS Security Leveling Guide 1-60](https://www.linkedin.com/pulse/ot-siem-leveling-guide-0-60-zakhar-bernhardt-7fczf).  
-💬 **Join Our Community** on [Discord](#) for support and discussions.
+⭐ If you find this project useful, please consider giving it a star on GitHub!
 
+<br><br>
+### ⁉️ Why Labshock
+✅ save 90% of time on setup and maintenance  
+✅ reduce costs by 95% compared to physical testbeds  
+
+### 📚 Who is Labshock for?
+
+- Security Teams: Test security tools, train staff, simulate real threats  
+- Universities: Hands-on ICStraining, SCADA/PLC setup  
+- Red Team: Exploit ICS systems with Pentest Fury  
+- Blue Team: Validate SIEM rules with Tidal Collector  
+- Researchers: Analyze OT traffic with Network Swiftness  
+
+### 🛠️ What You Get
+- Build a complete ICS test lab in 5 minutes  
+- Simulate SCADA & PLCs for attack/defense training  
+- Capture traffic, test SIEM rules, and refine detection  
+
+
+💰 Free: Personal Usage + Core Tools  
+💎 Paid: Commercial Usage + Network Swiftness Pro | Tidal Collector Pro | Pentest Fury Pro 
+
+📌 Start Now → [Quick Start Guide](https://github.com/zakharb/labshock/wiki)
 
 <p align="center">
   <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
 </p>
-
-<br><br>
-## :yellow_square: Support Labshock
-If you find this project useful, please consider helping:
-
-[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 <br><br>
 ## :yellow_square: Requirements
@@ -86,6 +92,8 @@ docker-compose down
 docker-compose build
 ```
 
+💛 If you install Labshock, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+
 
 <br><br>
 ## :yellow_square: Services
@@ -105,8 +113,6 @@ SIEM               # Multi Vendor
 IDS                # Multi Vendor
 And more...
 ```
-
-
 
 ### How to connect
 ```python
@@ -338,6 +344,13 @@ Ready for OT data collection and integration.
 
 
 <br><br>
+## :yellow_square: Support Labshock
+If you find this project useful, please consider helping:
+
+[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+
+
+<br><br>
 ## :yellow_square: Versioning
 
 Using [SemVer](http://semver.org/) for versioning. 
@@ -354,7 +367,7 @@ See also the list of [contributors](https://github.com/zakharb/labshock/contribu
 <br><br>
 ## :yellow_square: License
 
-This program is free software. 
-
-You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation - see the [LICENSE](LICENSE) file for details
+This program is free software for personal, non-commercial use only.  
+See the [LICENSE](LICENSE) file for details for free usage.  
+See the [LICENSE_SERVICES](LICENSE_SERVICES) file for details for commercial usage and Pro versions.  
 
