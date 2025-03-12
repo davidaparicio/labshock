@@ -1,21 +1,33 @@
-Labshock License (GPL)
+Labshock Software License
+Version 1.0 – 2025
 
-Version 3, 2025
+1. License Scope
 
-1. License Grant
+This license applies to the Labshock project and its related components. The license is divided into:
 
-This software is licensed under the GNU General Public License (GPL), version 3, except for Network Swiftness.
+- GPL-licensed components: Labshock, OpenPLC, and FUXA (source code provided).
+- Proprietary components: Network Swiftness, Tidal Collector, and Pentest Fury (closed-source, commercial licensing required).
 
-You are free to use, modify, and redistribute Labshock under the terms of the GPL, version 3, as outlined below:
+2. GPL Components (Labshock, OpenPLC, FUXA)
+These components are licensed under the GNU General Public License (GPL), Version 3.
 
-You may copy, modify, and distribute the software in source or binary form, provided that you include the copyright notice and disclaimers.
-If you distribute modified versions of the software, you must make the source code available under the same GPL terms.
-2. Exclusion of Network Swiftness
+- You are free to use, modify, and redistribute these components under the same GPL terms.
+- If you distribute modified versions, you must provide the source code under GPL v3.
+- The full text of the GPL v3 license can be found at https://www.gnu.org/licenses/gpl-3.0.html.
 
-Network Swiftness is NOT covered under this license and is subject to a separate license.
+3. Proprietary Components (Network Swiftness, Tidal Collector, Pentest Fury)
+These components are NOT covered under GPL and have the following restrictions:
 
-Network Swiftness may only be used for personal, non-commercial purposes. For commercial use, you must obtain a separate license. The commercial license is available upon request.
+- Personal Use Only – You may use these components for personal, non-commercial purposes.
+- No Redistribution – You may not share, distribute, or sublicense these components.
+- No Commercial Use – You may not use these components in a commercial environment (e.g., selling, hosting as a service, or integrating into paid products) without purchasing a Pro License.
+- No Reverse Engineering – You may not modify, decompile, or create derivative works of these components.
 
-3. No Warranty
+4. Commercial Licensing
+A Pro License is required for any commercial use of Network Swiftness, Tidal Collector, or Pentest Fury. To obtain a Pro License, contact: [Your Contact Information].
 
-This software is provided "as is", without any warranty of any kind, either express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+5. Termination
+Any violation of this license will result in immediate termination of your rights to use the proprietary components. GPL components remain licensed under their respective terms.
+
+6. Disclaimer
+This software is provided "as is," without warranty of any kind. The author is not responsible for any damages resulting from the use of this software.
