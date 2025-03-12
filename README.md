@@ -19,16 +19,16 @@
 
 [Labshock](https://github.com/zakharb/labshock) lets you build and test ICS security labs - without expensive hardware.
 
-💛 If you find Labshock useful, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+If you find Labshock useful, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
-⭐ If you find this project useful, please consider giving it a star on GitHub!
+If you find this project useful, please consider giving it Star ⭐
 
 <br><br>
 ### ⁉️ Why Labshock
-✅ save 90% of time on setup and maintenance  
-✅ reduce costs by 95% compared to physical testbeds  
+- save 90% of time on setup and maintenance  
+- reduce costs by 95% compared to physical testbeds  
 
-### 📚 Who is Labshock for?
+### 📚 Who is Labshock for
 
 - Security Teams: Test security tools, train staff, simulate real threats  
 - Universities: Hands-on ICStraining, SCADA/PLC setup  
@@ -128,8 +128,8 @@ Collector  # http://localhost:2443
 <br><br>
 ## :yellow_square: PLC
 
-*Labshock contains modified version of [OpenPLC](https://autonomylogic.com)*
-Source code for service: [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
+*Labshock contains modified version of [OpenPLC](https://autonomylogic.com)*  
+Source code for service: [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)  
 
 PLC supports all five languages defined in the IEC 61131-3 standard: 
 - `LD` Ladder Logic
@@ -291,7 +291,7 @@ Windows Docker Desktop Users:
 🔒 License: 
 - Network Swiftness is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
-- See [LICENSE_NS.md](https://github.com/zakharb/labshock/blob/main/LICENSE_NS.md) for details.
+- See [LICENSE](LICENSE) for details.
 
 Ready for OT network monitoring and analysis.
 
@@ -337,7 +337,7 @@ Usage:
 
 - Tidal Collector is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
-- See [LICENSE_NS.md](https://github.com/zakharb/labshock/blob/main/LICENSE_NS.md) for details.
+- See [LICENSE](LICENSE) for details.
 
 Ready for OT data collection and integration.
 
@@ -369,6 +369,5 @@ See also the list of [contributors](https://github.com/zakharb/labshock/contribu
 ## :yellow_square: License
 
 This program is free software for personal, non-commercial use only.  
-See the [LICENSE](LICENSE) file for details for free usage.  
-See the [LICENSE_SERVICES](LICENSE_SERVICES) file for details for commercial usage and Pro versions.  
+See the [LICENSE](LICENSE) file for details.  
 
