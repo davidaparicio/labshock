@@ -129,6 +129,7 @@ Collector  # http://localhost:2443
 ## :yellow_square: PLC
 
 *Labshock contains modified version of [OpenPLC](https://autonomylogic.com)*
+Source code for service: [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
 
 PLC supports all five languages defined in the IEC 61131-3 standard: 
 - `LD` Ladder Logic
