@@ -17,39 +17,38 @@
 <br><br>
 ## 🟨 Labshock - Your ICS Security Lab without Cost & Complexity
 
-[Labshock](https://github.com/zakharb/labshock) lets you build and test ICS security labs - without expensive hardware.
+[Labshock](https://labshock.github.io/) lets you build and test ICS security labs - without expensive hardware.
 
-If you find Labshock useful, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
-
-If you find this project useful, please consider giving it Star ⭐
-
-<br><br>
-### ⁉️ Why Labshock
+### Why Labshock
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds  
 
-### 📚 Who is Labshock for
+### Who is Labshock for
 
-- Security Teams: Test security tools, train staff, simulate real threats  
-- Universities: Hands-on ICStraining, SCADA/PLC setup  
-- Red Team: Exploit ICS systems with Pentest Fury  
-- Blue Team: Validate SIEM rules with Tidal Collector  
-- Researchers: Analyze OT traffic with Network Swiftness  
+- Security Teams: test security tools, train staff, simulate real threats  
+- Universities: hands-on ICStraining, SCADA/PLC setup  
+- Red Team: exploit ICS systems with Pentest Fury  
+- Blue Team: validate SIEM rules with Tidal Collector  
+- Researchers: analyze OT traffic with Network Swiftness  
 
-### 🛠️ What You Get
+### What You Get
 - Build a complete ICS test lab in 5 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
-- Capture traffic, test SIEM rules, and refine detection  
+- Capture traffic, test SIEM rules and refine detection  
 
-
-💰 Free: Personal Usage + Core Tools  
-💎 Paid: Commercial Usage + Network Swiftness Pro | Tidal Collector Pro | Pentest Fury Pro 
-
-📌 Start Now → [Quick Start Guide](https://github.com/zakharb/labshock/wiki)
+Start Now → [Quick Start Guide](https://github.com/zakharb/labshock/wiki)  
+Community  → [Discord](https://discord.gg/bpmaQFfW76)  
+If you find this project useful, please consider giving it Star ⭐
 
 <p align="center">
   <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
 </p>
+
+<br><br>
+## :yellow_square: Support Labshock
+If you find this project useful, please consider helping:
+
+[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 <br><br>
 ## :yellow_square: Requirements
@@ -342,14 +341,6 @@ Usage:
 Ready for OT data collection and integration.
 
 <p align="center"> <img src="img/collector.png" alt="collector" /> </p>
-
-
-<br><br>
-## :yellow_square: Support Labshock
-If you find this project useful, please consider helping:
-
-[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
-
 
 <br><br>
 ## :yellow_square: Versioning
