@@ -46,6 +46,8 @@ services:
         ipv4_address: 192.168.2.10
     ports:
       - "8080:8080"
+    volumes:
+      - plc-data:/workdir/webserver
 
   ews:
     build: ./ews/
@@ -90,4 +92,5 @@ services:
 
 volumes:
   scada-data:
+  plc-data:    
   ews-data:

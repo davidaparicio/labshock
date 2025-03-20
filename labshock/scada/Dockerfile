@@ -1,8 +1,5 @@
-FROM zakharbz/labshock-scada:v1.0.0
+FROM zakharbz/labshock-scada:v1.1.0
 
-# patch
-COPY ./patch/client/src/favicon.ico /usr/src/app/FUXA/client/dist/favicon.ico
-COPY ./patch/client/src/index.html /usr/src/app/FUXA/client/dist/index.html
 
 # entrypoint
 COPY entrypoint.sh /entrypoint.sh
