@@ -90,6 +90,12 @@ services:
       - "2443:2443"
       - "8766:8766"
 
+  portal:
+    build: ./portal/
+    restart: unless-stopped
+    ports:
+      - "443:443"
+
 volumes:
   scada-data:
   plc-data:    
