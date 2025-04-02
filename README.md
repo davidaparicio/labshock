@@ -10,8 +10,13 @@
   </a>
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.4-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/Portal-1.0-yellow" height="20"/>
   <img src="https://img.shields.io/badge/Network Swiftness-1.1-yellow" height="20"/>
   <img src="https://img.shields.io/badge/Tidal Collector-1.0-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/Pentest Station-1.0-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/PLC-1.1-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/SCADA-1.1-yellow" height="20"/>
+  <img src="https://img.shields.io/badge/EWS-1.0-yellow" height="20"/>
 </p>
 
 <br><br>
@@ -25,27 +30,30 @@
 
 ### Who is Labshock for
 
-- Security Teams: test security tools, train staff, simulate real threats  
-- Universities: hands-on ICStraining, SCADA/PLC setup  
-- Red Team: exploit ICS systems with Pentest Fury  
-- Blue Team: validate SIEM rules with Tidal Collector  
-- Researchers: analyze OT traffic with Network Swiftness  
+- Security Teams > test security tools, train staff, simulate real threats  
+- Universities > hands-on ICS training, SCADA/PLC setup  
+- Red Team > exploit ICS systems with Pentest Fury  
+- Blue Team > validate SIEM rules with Tidal Collector  
+- Researchers > analyze OT traffic with Network Swiftness  
 
 ### What You Get
 - Build a complete ICS test lab in 5 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
 - Capture traffic, test SIEM rules and refine detection  
 
-Start Now → [Quick Start Guide](https://github.com/zakharb/labshock/wiki)  
-Community  → [Discord](https://discord.gg/bpmaQFfW76)  
-If you find this project useful, please consider giving it Star ⭐
+### Links
+- [Labshock Website](https://labshock.github.io)  
+- [Wiki Documentation](https://github.com/zakharb/labshock/wiki)  
+- [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
+- [Support Discord](https://discord.gg/bpmaQFfW76)  
 
 <p align="center">
+  ⭐ If you find this project useful, please consider giving it Star ⭐
   <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
 </p>
 
 <br><br>
-## :yellow_square: Support Labshock
+## :red_square: Support Labshock
 If you find this project useful, please consider helping:
 
 [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
@@ -53,7 +61,7 @@ If you find this project useful, please consider helping:
 <br><br>
 ## :yellow_square: Requirements
 
-Use [How to on wiki](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)
+Use [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)
 
 Install Docker components, thats all:
 - [Docker](https://www.docker.com/)
@@ -61,8 +69,7 @@ Install Docker components, thats all:
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
 
 
-Minimal System Requirements `PLC + SCADA + EWS + Pentest + Switch`:
-- `CPU 2` | `RAM 1G` | `HDD 10G`
+Minimal System Requirements `CPU 2` | `RAM 1G` | `HDD 10G`  
 
 <p align="center">
   <img src="img/min-reqs.png" />
@@ -91,7 +98,7 @@ docker-compose down -v
 docker-compose build
 ```
 
-💛 If you install Labshock, consider supporting my work: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+❤️ If you install Labshock, consider supporting Labshock: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 
 <br><br>
@@ -100,29 +107,32 @@ docker-compose build
 ### What's Inside
 
 ```python
-PLC                # OpenPLC
-SCADA              # FUXA
-ROUTER             # Custom
-EWS & OWS          # Linux / Windows
-PENTESTING         # Kali Linux
-FIREWALL           # Iptables
-TRANSFER           # FTP
-REMOTE             # VNC / RDP
-SIEM               # Multi Vendor
-IDS                # Multi Vendor
+PORTAL       # Web                  # https://localhost
+PLC          # OpenPLC              # http://localhost:1881
+SCADA        # FUXA                 # http://localhost:8080, pwd: openplc/openplc
+EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engineer
+PENTEST      # Kali Linux           # ssh pentest@localhost -p 2222, pwd: pentest
+IDS          # Network Swiftness    # http://localhost:1443
+COLLECTOR    # Tidal Collector      # http://localhost:2443
 And more...
 ```
 
-### How to connect
-```python
-SCADA      # http://localhost:1881
-PLC        # http://localhost:8080, user/pwd: openplc/openplc
-EWS        # http://localhost:5911/vnc.html, user/pwd: engineer/engineer
-Pentest    # ssh pentest@localhost -p 2222
-IDS        # http://localhost:1443
-Collector  # http://localhost:2443
-```
 
+<br><br>
+## :yellow_square: Portal
+
+*Labshock Portal serves as the central hub for accessing all Labshock services, documentation and resources.*  
+
+With Portal Service you can:
+- access all Labshock tools from a single interface: [http://localhost](http://localhost)
+- navigate directly to documentation, configuration guides
+- connect to services like Network Swiftness, Tidal Collector and Pentest Fury
+- use built-in links to troubleshooting and support resources
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a12900b6-c719-4b1e-9c6f-492e543489ea" alt="portal" />
+</p>
 
 <br><br>
 ## :yellow_square: PLC
