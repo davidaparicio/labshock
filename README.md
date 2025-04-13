@@ -42,6 +42,7 @@
 - Capture traffic, test SIEM rules and refine detection  
 
 ### Links
+- [YouTube Channel](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)
 - [Labshock Website](https://labshock.github.io)  
 - [Wiki Documentation](https://github.com/zakharb/labshock/wiki)  
 - [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
