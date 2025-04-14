@@ -109,8 +109,8 @@ docker-compose build
 
 ```python
 PORTAL       # Web                  # https://localhost
-PLC          # OpenPLC              # http://localhost:1881
-SCADA        # FUXA                 # http://localhost:8080, pwd: openplc/openplc
+PLC          # OpenPLC              # http://localhost:8080
+SCADA        # FUXA                 # http://localhost:1881, pwd: openplc/openplc
 EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engineer
 PENTEST      # Kali Linux           # ssh pentest@localhost -p 2222, pwd: pentest
 IDS          # Network Swiftness    # http://localhost:1443
