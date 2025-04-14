@@ -125,7 +125,7 @@ And more...
 *Labshock Portal serves as the central hub for accessing all Labshock services, documentation and resources.*  
 
 With Portal Service you can:
-- access all Labshock tools from a single interface: [http://localhost](http://localhost)
+- access all Labshock tools from a single interface: [https://localhost](https://localhost)
 - navigate directly to documentation, configuration guides
 - connect to services like Network Swiftness, Tidal Collector and Pentest Fury
 - use built-in links to troubleshooting and support resources
