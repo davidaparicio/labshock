@@ -74,12 +74,15 @@ services:
         ipv4_address: 192.168.3.30
     ports:
       - "2222:22"
+      - "3443:3443"
 
   ids:
     build: ./ids/
     network_mode: host
     restart: unless-stopped
-
+    environment:
+      - TZ=America/New_York
+      
   collector:
     build: ./collector/
     networks:
