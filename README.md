@@ -37,7 +37,7 @@ Labshock lets you build and test ICS security labs - without expensive hardware.
 <p align="center">
   ⭐ If you find this project useful, please put Star ⭐
   <br><br>
-  <img src="img/lab-diagram.jpeg" alt="Labshock Diagram" />
+  <img src="img/lab-diagram.png" alt="Labshock Diagram" />
 </p>
 
 <br><br>
