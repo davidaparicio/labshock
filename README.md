@@ -55,7 +55,8 @@ Install Docker components, thats all:
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
 
 
-Minimal System Requirements `CPU 2` | `RAM 1G` | `HDD 10G`  
+Minimal System Requirements `CPU 2` | `RAM 4G` | `HDD 10G`  
+Recommended System Requirements `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
   <img src="img/min-reqs.png" />
@@ -84,7 +85,9 @@ docker-compose down -v
 docker-compose build
 ```
 
-❤️ If you install Labshock, consider supporting Labshock: [![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+❤️ If you install Labshock, consider supporting Labshock:  
+
+[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 
 <br><br>
@@ -97,7 +100,7 @@ PORTAL       # Web                  # https://localhost
 PLC          # OpenPLC              # http://localhost:8080
 SCADA        # FUXA                 # http://localhost:1881, pwd: openplc/openplc
 EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engineer
-PENTEST      # Kali Linux           # ssh pentest@localhost -p 2222, pwd: pentest
+PENTEST      # Pentest Fury         # http://localhost:3443
 IDS          # Network Swiftness    # http://localhost:1443
 COLLECTOR    # Tidal Collector      # http://localhost:2443
 And more...
@@ -136,6 +139,7 @@ PLC supports all five languages defined in the IEC 61131-3 standard:
 PLC supports protocols
 - Modbus
 - DNP3
+- S7 (soon)
 
 With PLC you can:
 - login into dashboard http://localhost:8080
@@ -175,67 +179,15 @@ With SCADA you can:
   <img src="img/scada.gif" alt="scada" />
 </p>
 
-<br><br>
-## :yellow_square: EWS
-
-*Labshock contains Engineering Station based on [Kali Linux](https://www.kali.org/)*
-
-EWS comes pre-configured and ready to use:
-- IDE OpenPLC Editor
-- Interface to PLC
-- Interface to SCADA
-- Saved PLC/SCADA projects
-
-With EWS you can:
-- login into noVNC interface http://localhost:5911/vnc.html
-- password `engineer`
-- all links/projects are on Desktop
-- access PLC/SCADA via browser
-- access IDE via OpenPLC Editor
-
-<p align="center">
-  <img src="img/ews.jpeg" alt="ews" />
-</p>
-
 
 <br><br>
-### Windows
-
-It's also possible to run `Windows` inside Labshock:
-- check & use this github repo [dockur/windows](https://github.com/dockur/windows)
-- use at your own risk & effort
-
-To run inside labshock include in `docker-compose.yml` service:
-```
-  ews-win:
-    image: dockurr/windows
-    container_name: windows
-    environment:
-      VERSION: "11"
-    devices:
-      - /dev/kvm
-      - /dev/net/tun
-    cap_add:
-      - NET_ADMIN
-    ports:
-      - 8006:8006
-      - 3389:3389/tcp
-      - 3389:3389/udp
-    stop_grace_period: 2m
-```
-
-<p align="center">
-  <img src="img/ews-win.png" alt="ews-win" />
-</p>
-
-<br><br>
-## :yellow_square: Pentest
+## :yellow_square: Pentest Fury
 
 *Labshock contains modified version of [Kali Linux](https://www.kali.org/)*
 
 Labshock includes Pentest Station tailored for OT and ICS security testing:
 
-- Tools for Modbus, DNP3, IEC 60870-5-104, OPC UA analysis
+- Tools for Modbus, DNP3, IEC 60870-5-104, S7, OPC UA analysis
 - SCADA/PLC fuzzing, packet manipulation, and vulnerability scanning
 - Pre-installed Kali tools like Nmap, Wireshark & Metasploit
 
@@ -245,11 +197,19 @@ Use Cases:
 - Decode and analyze SCADA traffic
 
 Usage:
+- open web interface http://localhost:1443
+- or use command line
 ```
 ssh pentest@localhost -p 2222
 pwd: pentest
 ```
 
+🔒 License:
+
+- Tidal Collector is for personal, non-commercial use only.
+- Redistribution, modification, or commercial use is prohibited.
+- See [LICENSE](LICENSE) for details.
+  
 Ready for OT-focused pentesting.
 
 <p align="center">
@@ -280,7 +240,7 @@ Use Cases:
 Usage:
 - open web interface http://localhost:1443
 
-Windows Docker Desktop Users:
+⚠️ Windows Docker Desktop Users:
 - navigate to Settings > Resources > Network, and check the "Enable host networking" option.
 
 🔒 License: 
@@ -337,6 +297,60 @@ Usage:
 Ready for OT data collection and integration.
 
 <p align="center"> <img src="img/collector.png" alt="collector" /> </p>
+
+<br><br>
+## :yellow_square: EWS
+
+*Labshock contains Engineering Station based on [Kali Linux](https://www.kali.org/)*
+
+EWS comes pre-configured and ready to use:
+- IDE OpenPLC Editor
+- Interface to PLC
+- Interface to SCADA
+- Saved PLC/SCADA projects
+
+With EWS you can:
+- login into noVNC interface http://localhost:5911/vnc.html
+- password `engineer`
+- all links/projects are on Desktop
+- access PLC/SCADA via browser
+- access IDE via OpenPLC Editor
+
+<p align="center">
+  <img src="img/ews.jpeg" alt="ews" />
+</p>
+
+
+<br><br>
+### Windows
+
+It's also possible to run `Windows` inside Labshock:
+- check & use this github repo [dockur/windows](https://github.com/dockur/windows)
+- use at your own risk & effort
+
+To run inside labshock include in `docker-compose.yml` service:
+```
+  ews-win:
+    image: dockurr/windows
+    container_name: windows
+    environment:
+      VERSION: "11"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8006:8006
+      - 3389:3389/tcp
+      - 3389:3389/udp
+    stop_grace_period: 2m
+```
+
+<p align="center">
+  <img src="img/ews-win.png" alt="ews-win" />
+</p>
+
 
 <br><br>
 ## :yellow_square: Versioning
