@@ -206,7 +206,7 @@ pwd: pentest
 
 🔒 License:
 
-- Tidal Collector is for personal, non-commercial use only.
+- Pentest Fury is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
 - See [LICENSE](LICENSE) for details.
   
