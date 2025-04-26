@@ -1,23 +1,8 @@
 <p align="center">
   <a href="https://github.com/zakharb/labshock">
-  <img src="img/logo.png" alt="logo" />
+  <img src="img/labshock-logo.gif" alt="logo" />
 </p>
 
-<p align="center">
-
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=FFD709&center=true&width=435&lines=Simulate+Attacks+and+Test+Tools;Train+Teams+and+Research+Threats;No+Expensive+HW+and+Setup+Required" alt="Typing SVG" />
-  </a>
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-1.4-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/Portal-1.0-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/Network Swiftness-1.1-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/Tidal Collector-1.0-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/Pentest Station-1.0-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/PLC-1.1-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/SCADA-1.1-yellow" height="20"/>
-  <img src="https://img.shields.io/badge/EWS-1.0-yellow" height="20"/>
-</p>
 
 <br><br>
 ## 🟨 Labshock - Your ICS Security Lab without Cost & Complexity
