@@ -5,18 +5,46 @@ Version 1.0 – 2025
 
 This license applies to the Labshock project and its related components. The license is divided into:
 
-- GPL-licensed components: Labshock, OpenPLC, and FUXA (source code provided).
-- Proprietary components: Network Swiftness, Tidal Collector, and Pentest Fury (closed-source, commercial licensing required).
+Open-source components:
+- OpenPLC (licensed under GNU General Public License v3.0)
+- FUXA (licensed under the MIT License)
 
-2. GPL Components (Labshock, OpenPLC, FUXA)
-These components are licensed under the GNU General Public License (GPL), Version 3.
+Proprietary components:
+- Labshock orchestration files
+- Network Swiftness
+- Tidal Collector
+- Pentest Fury
+- Portal
+- Router
+- EWS
 
-- You are free to use, modify, and redistribute these components under the same GPL terms.
-- If you distribute modified versions, you must provide the source code under GPL v3.
-- The full text of the GPL v3 license can be found at https://www.gnu.org/licenses/gpl-3.0.html.
+2. Open-Source Components
 
-3. Proprietary Components (Network Swiftness, Tidal Collector, Pentest Fury)
-These components are NOT covered under GPL and have the following restrictions:
+OpenPLC (GPL v3):  
+- Licensed under the GNU General Public License, Version 3.
+- Source code is available at: https://github.com/thiagoralves/OpenPLC_v3
+- You are free to use, modify, and redistribute these components under the same GPL terms
+- If you distribute modified versions, you must provide the source code under GPL v3
+- The full text of the GPL v3 license can be found at https://www.gnu.org/licenses/gpl-3.0.html
+
+FUXA (MIT License)
+- Licensed under the MIT License
+- The license text for FUXA is available at: https://github.com/frangoteam/FUXA/
+- No obligation to provide source code if unmodified, but attribution is required under MIT terms
+
+3. Proprietary Components
+
+The following components are proprietary and subject to restrictions:
+
+- Labshock orchestration (Docker Compose and related files)
+- Network Swiftness
+- Tidal Collector
+- Pentest Fury
+- Portal
+- EWS
+- Router
+
+Usage Restrictions:
 
 - Personal Use Only – You may use these components for personal, non-commercial purposes.
 - No Redistribution – You may not share, distribute, or sublicense these components.
@@ -24,10 +52,13 @@ These components are NOT covered under GPL and have the following restrictions:
 - No Reverse Engineering – You may not modify, decompile, or create derivative works of these components.
 
 4. Commercial Licensing
-A Pro License is required for any commercial use of Network Swiftness, Tidal Collector, or Pentest Fury. To obtain a Pro License, contact: Zakhar Bernhardt, zebernhardt@icloud.com
+A Pro License is required for any commercial use of Network Swiftness, Tidal Collector, Pentest Fury, Portal. 
+To obtain a Pro License, contact: Zakhar Bernhardt, zebernhardt@icloud.com
 
 5. Termination
-Any violation of this license will result in immediate termination of your rights to use the proprietary components. GPL components remain licensed under their respective terms.
+Any violation of this license will result in immediate termination of your rights to use the proprietary components. 
+GPL components remain licensed under their respective terms.
 
 6. Disclaimer
-This software is provided "as is," without warranty of any kind. The author is not responsible for any damages resulting from the use of this software.
+This software is provided "as is," without warranty of any kind. 
+The author is not responsible for any damages resulting from the use of this software.
