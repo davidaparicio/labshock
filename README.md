@@ -12,7 +12,9 @@ Labshock lets you build and test ICS security labs - without expensive hardware.
 ### Why Labshock
 - [Labshock Website](https://labshock.github.io/)
 - save 90% of time on setup and maintenance  
-- reduce costs by 95% compared to physical testbeds  
+- reduce costs by 95% compared to physical testbeds
+- provide safe, real-world OT environments for security testing
+- solve global gap in hands-on OT/ICS cybersecurity training
 
 ### Who is Labshock for
 - [Labshock Into](https://youtu.be/USo6mDEdnf4)
