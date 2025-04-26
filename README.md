@@ -27,10 +27,10 @@ Labshock lets you build and test ICS security labs - without expensive hardware.
 - Capture traffic, test SIEM rules and refine detection  
 
 ### Links
-- [YouTube Channel](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)
- 
-
+- [Labshock Website](https://labshock.github.io/)  
+- [YouTube Channel](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)  
 - [Support Discord](https://discord.gg/bpmaQFfW76)  
+- [Linkedin Updates](https://www.linkedin.com/in/zakharb/)  
 
 <p align="center">
   ⭐ If you find this project useful, please consider giving it Star ⭐
