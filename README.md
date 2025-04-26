@@ -7,30 +7,29 @@
 <br><br>
 ## 🟨 Labshock - Your ICS Security Lab without Cost & Complexity
 
-[Labshock](https://labshock.github.io/) lets you build and test ICS security labs - without expensive hardware.
+Labshock lets you build and test ICS security labs - without expensive hardware.
 
 ### Why Labshock
+- [Labshock Website](https://labshock.github.io/)
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds  
 
 ### Who is Labshock for
-
-- Security Teams > test security tools, train staff, simulate real threats  
-- Universities > hands-on ICS training, SCADA/PLC setup  
-- Red Team > exploit ICS systems with Pentest Fury  
-- Blue Team > validate SIEM rules with Tidal Collector  
-- Researchers > analyze OT traffic with Network Swiftness  
+- [Labshock Into](https://youtu.be/USo6mDEdnf4)
+- Security & OT Teams > test security tools, train staff, simulate real threats  
+- Universities & Proffesionals > hands-on ICS training, SCADA/PLC setup  
+- Red & Blue Teams > exploit ICS systems and validate OT SIEM/IDS rules
 
 ### What You Get
+- [Labshock Demo](https://youtu.be/Q4HBjgnCOO0)
 - Build a complete ICS test lab in 5 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
 - Capture traffic, test SIEM rules and refine detection  
 
 ### Links
 - [YouTube Channel](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)
-- [Labshock Website](https://labshock.github.io)  
-- [Wiki Documentation](https://github.com/zakharb/labshock/wiki)  
-- [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
+ 
+
 - [Support Discord](https://discord.gg/bpmaQFfW76)  
 
 <p align="center">
@@ -47,16 +46,13 @@ If you find this project useful, please consider helping:
 <br><br>
 ## :yellow_square: Requirements
 
-Use [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)
-
 Install Docker components, thats all:
 - [Docker](https://www.docker.com/)
 - [Docker-compose](https://docs.docker.com/compose/install/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
 
-
-Minimal System Requirements `CPU 2` | `RAM 4G` | `HDD 10G`  
-Recommended System Requirements `CPU 4` | `RAM 8G` | `HDD 20G`  
+Minimal: `CPU 2` | `RAM 4G` | `HDD 10G`  
+Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
   <img src="img/min-reqs.png" />
@@ -65,7 +61,10 @@ Recommended System Requirements `CPU 4` | `RAM 8G` | `HDD 20G`
 <br><br>
 ## :yellow_square: Install & Run & Update
 
-Install
+How-to: [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
+Videos: [Linux](https://youtu.be/CGpizCGcHBc), [Windows](https://youtu.be/7PkIeSX6q6g)  
+
+Install 
  ```
 git clone https://github.com/zakharb/labshock.git
 cd labshock/labshock
@@ -93,6 +92,8 @@ docker-compose build
 <br><br>
 ## :yellow_square: Services
 
+For more info check [Wiki Documentation](https://github.com/zakharb/labshock/wiki)
+ 
 ### What's Inside
 
 ```python
@@ -369,6 +370,7 @@ See also the list of [contributors](https://github.com/zakharb/labshock/contribu
 <br><br>
 ## :yellow_square: License
 
-This program is free software for personal, non-commercial use only.  
+© 2025 Zakhar Bernhardt  
+Labshock contains open-source and proprietary components.   
 See the [LICENSE](LICENSE) file for details.  
 
