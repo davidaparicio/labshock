@@ -58,7 +58,7 @@ Minimal: `CPU 2` | `RAM 4G` | `HDD 10G`
 Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
-  <img src="img/min-reqs.png" />
+  <img src="img/min-reqs.jpg" />
 </p>
 
 <br><br>
@@ -127,7 +127,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Portal-service)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a12900b6-c719-4b1e-9c6f-492e543489ea" alt="portal" />
+  <img src="img/portal.jpg" alt="portal" />
 </p>
 
 <br><br>
@@ -155,7 +155,7 @@ Usage:
 - find source code on [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
 
 <p align="center">
-  <img src="img/plc.gif" alt="plc" />
+  <img src="img/plc.jpg" alt="plc" />
 </p>
 
 <br><br>
@@ -178,7 +178,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
 <p align="center">
-  <img src="img/scada.gif" alt="scada" />
+  <img src="img/scada.jpg" alt="scada" />
 </p>
 
 
@@ -319,7 +319,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
 
 <p align="center">
-  <img src="img/ews.jpeg" alt="ews" />
+  <img src="img/ews.jpg" alt="ews" />
 </p>
 
 
