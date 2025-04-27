@@ -10,20 +10,20 @@
 Labshock lets you build and test ICS security labs - without expensive hardware.
 
 ### Why Labshock
-- [Labshock Website](https://labshock.github.io/)
+- [check Website](https://labshock.github.io/)
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds
 - provide safe, real-world OT environments for security testing
 - solve global gap in hands-on OT/ICS cybersecurity training
 
 ### Who is Labshock for
-- [Labshock Into](https://youtu.be/USo6mDEdnf4)
+- [Labshock Into Video](https://youtu.be/USo6mDEdnf4)
 - Security & OT Teams > test security tools, train staff, simulate real threats  
 - Universities & Proffesionals > hands-on ICS training, SCADA/PLC setup  
 - Red & Blue Teams > exploit ICS systems and validate OT SIEM/IDS rules
 
 ### What You Get
-- [Labshock Demo](https://youtu.be/Q4HBjgnCOO0)
+- [Labshock Demo Video](https://youtu.be/Q4HBjgnCOO0)
 - Build a complete ICS test lab in 5 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
 - Capture traffic, test SIEM rules and refine detection  
@@ -114,7 +114,7 @@ And more...
 <br><br>
 ## :yellow_square: Portal
 
-*Labshock Portal serves as the central hub for accessing all Labshock services, documentation and resources.*  
+*Labshock contains Portal as central hub for accessing all services, documentation and resources.*  
 
 With Portal Service you can:
 - access all Labshock tools from a single interface: [https://localhost](https://localhost)
@@ -122,6 +122,9 @@ With Portal Service you can:
 - connect to services like Network Swiftness, Tidal Collector and Pentest Fury
 - use built-in links to troubleshooting and support resources
 
+Usage:
+- open web interface http://localhost
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Portal-service)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a12900b6-c719-4b1e-9c6f-492e543489ea" alt="portal" />
@@ -131,7 +134,7 @@ With Portal Service you can:
 ## :yellow_square: PLC
 
 *Labshock contains modified version of [OpenPLC](https://autonomylogic.com)*  
-Source code for service: [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)  
+  
 
 PLC supports all five languages defined in the IEC 61131-3 standard: 
 - `LD` Ladder Logic
@@ -145,13 +148,11 @@ PLC supports protocols
 - DNP3
 - S7 (soon)
 
-With PLC you can:
+Usage:
 - login into dashboard http://localhost:8080
 - user/password `openplc/openplc`
-- start/stop PLC
-- upload project
-- monitor status
-- change settings
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/PLC-service)
+- find source code on [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
 
 <p align="center">
   <img src="img/plc.gif" alt="plc" />
@@ -171,13 +172,10 @@ SCADA supports protocols:
 - MQTT
 - S7
 
-With SCADA you can:
+Usage:
 - login into main interface http://localhost:1881
 - user/password you can set in settings
-- interact with controls
-- check alarms
-- edit layout
-- edit connections/tags
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
 <p align="center">
   <img src="img/scada.gif" alt="scada" />
@@ -187,9 +185,9 @@ With SCADA you can:
 <br><br>
 ## :yellow_square: Pentest Fury
 
-*Labshock contains modified version of [Kali Linux](https://www.kali.org/)*
+*Labshock includes Pentest Station tailored for OT and ICS security testing.*
 
-Labshock includes Pentest Station tailored for OT and ICS security testing:
+Features:
 
 - Tools for Modbus, DNP3, IEC 60870-5-104, S7, OPC UA analysis
 - SCADA/PLC fuzzing, packet manipulation, and vulnerability scanning
@@ -207,7 +205,8 @@ Usage:
 ssh pentest@localhost -p 2222
 pwd: pentest
 ```
-
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Pentest-service)
+  
 🔒 License:
 
 - Pentest Fury is for personal, non-commercial use only.
@@ -223,7 +222,7 @@ Ready for OT-focused pentesting.
 <br><br>
 ## :yellow_square: Network Swiftness
 
-Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments.
+*Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments.*
 
 Features:
 
@@ -243,6 +242,7 @@ Use Cases:
 
 Usage:
 - open web interface http://localhost:1443
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/IDS-service)
 
 ⚠️ Windows Docker Desktop Users:
 - navigate to Settings > Resources > Network, and check the "Enable host networking" option.
@@ -260,18 +260,12 @@ Ready for OT network monitoring and analysis.
 
 ### External IDS
 
-Now You cab easily connect other IDS, for example Zeek:
-```
-  ids:
-    image: zeek/zeek:latest
-    network_mode: host
-    command: tail -f /dev/null
-```
+You can easily connect other IDS, for example [Zeek](https://github.com/zakharb/labshock/wiki/IDS-Service#-Zeek-IDS)
 
 <br><br>
 ## :yellow_square: Tidal Collector
 
-Labshock includes Tidal Collector for efficient OT data collection and forwarding.
+*Labshock includes Tidal Collector for efficient OT data collection and forwarding.*
 
 Features:
 
@@ -291,6 +285,7 @@ Use Cases:
 Usage:
 
 - open web interface http://localhost:2443
+- find more info on [wiki](https://github.com/zakharb/labshock/wiki/Collector-service)
 
 🔒 License:
 
@@ -305,20 +300,23 @@ Ready for OT data collection and integration.
 <br><br>
 ## :yellow_square: EWS
 
-*Labshock contains Engineering Station based on [Kali Linux](https://www.kali.org/)*
+*Labshock contains Engineering Station for programming SCADA and PLC.*
 
 EWS comes pre-configured and ready to use:
+
 - IDE OpenPLC Editor
 - Interface to PLC
 - Interface to SCADA
 - Saved PLC/SCADA projects
 
-With EWS you can:
+Usage:
+
 - login into noVNC interface http://localhost:5911/vnc.html
 - password `engineer`
 - all links/projects are on Desktop
 - access PLC/SCADA via browser
 - access IDE via OpenPLC Editor
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
 
 <p align="center">
   <img src="img/ews.jpeg" alt="ews" />
@@ -332,24 +330,6 @@ It's also possible to run `Windows` inside Labshock:
 - check & use this github repo [dockur/windows](https://github.com/dockur/windows)
 - use at your own risk & effort
 
-To run inside labshock include in `docker-compose.yml` service:
-```
-  ews-win:
-    image: dockurr/windows
-    container_name: windows
-    environment:
-      VERSION: "11"
-    devices:
-      - /dev/kvm
-      - /dev/net/tun
-    cap_add:
-      - NET_ADMIN
-    ports:
-      - 8006:8006
-      - 3389:3389/tcp
-      - 3389:3389/udp
-    stop_grace_period: 2m
-```
 
 <p align="center">
   <img src="img/ews-win.png" alt="ews-win" />
