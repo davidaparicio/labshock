@@ -58,7 +58,7 @@ Minimal: `CPU 2` | `RAM 4G` | `HDD 10G`
 Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
-  <img src="img/min-reqs.jpg" />
+  <img src="img/min-reqs.png" />
 </p>
 
 <br><br>
@@ -127,7 +127,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Portal-service)
 
 <p align="center">
-  <img src="img/portal.jpg" alt="portal" />
+  <img src="img/portal.png" alt="portal" />
 </p>
 
 <br><br>
@@ -155,7 +155,7 @@ Usage:
 - find source code on [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
 
 <p align="center">
-  <img src="img/plc.jpg" alt="plc" />
+  <img src="img/plc.png" alt="plc" />
 </p>
 
 <br><br>
@@ -178,7 +178,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
 <p align="center">
-  <img src="img/scada.jpg" alt="scada" />
+  <img src="img/scada.png" alt="scada" />
 </p>
 
 
@@ -216,7 +216,7 @@ pwd: pentest
 Ready for OT-focused pentesting.
 
 <p align="center">
-  <img src="img/pentest.jpg" alt="pentest" />
+  <img src="img/pentest.png" alt="pentest" />
 </p>
 
 <br><br>
@@ -255,7 +255,7 @@ Usage:
 Ready for OT network monitoring and analysis.
 
 <p align="center">
-  <img src="img/ids.jpg" alt="ids" />
+  <img src="img/ids.png" alt="ids" />
 </p>
 
 ### External IDS
@@ -295,7 +295,7 @@ Usage:
 
 Ready for OT data collection and integration.
 
-<p align="center"> <img src="img/collector.jpg" alt="collector" /> </p>
+<p align="center"> <img src="img/collector.png" alt="collector" /> </p>
 
 <br><br>
 ## :yellow_square: EWS
@@ -319,7 +319,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
 
 <p align="center">
-  <img src="img/ews.jpg" alt="ews" />
+  <img src="img/ews.png" alt="ews" />
 </p>
 
 
