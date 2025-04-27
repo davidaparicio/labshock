@@ -216,7 +216,7 @@ pwd: pentest
 Ready for OT-focused pentesting.
 
 <p align="center">
-  <img src="img/pentest.png" alt="pentest" />
+  <img src="img/pentest.jpg" alt="pentest" />
 </p>
 
 <br><br>
@@ -255,7 +255,7 @@ Usage:
 Ready for OT network monitoring and analysis.
 
 <p align="center">
-  <img src="img/ids.png" alt="ids" />
+  <img src="img/ids.jpg" alt="ids" />
 </p>
 
 ### External IDS
@@ -295,7 +295,7 @@ Usage:
 
 Ready for OT data collection and integration.
 
-<p align="center"> <img src="img/collector.png" alt="collector" /> </p>
+<p align="center"> <img src="img/collector.jpg" alt="collector" /> </p>
 
 <br><br>
 ## :yellow_square: EWS
