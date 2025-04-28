@@ -58,7 +58,7 @@ Minimal: `CPU 2` | `RAM 4G` | `HDD 10G`
 Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
-  <img src="img/min-reqs.png" />
+  <img src="img/min-req.png" />
 </p>
 
 <br><br>
