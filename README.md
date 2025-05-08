@@ -5,28 +5,28 @@
 
 
 <br><br>
-## 🟨 Labshock - Your ICS Security Lab without Cost & Complexity
+## 🟨 Labshock - #1 Industrial Cyber Lab
 
-Labshock lets you build and test ICS security labs - without expensive hardware.
+Labshock provides a ready-to-use environment to learn, simulate attacks and test defensive strategies.
 
 ### Why Labshock
 - [check Website](https://labshock.github.io/)
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds
-- provide safe, real-world OT environments for security testing
-- solve global gap in hands-on OT/ICS cybersecurity training
+- provide safe, real-world OT environments for learning and testing
 
 ### Who is Labshock for
 - [Labshock Into Video](https://youtu.be/USo6mDEdnf4)
-- Security & OT Teams > test security tools, train staff, simulate real threats  
-- Universities & Proffesionals > hands-on ICS training, SCADA/PLC setup  
-- Red & Blue Teams > exploit ICS systems and validate OT SIEM/IDS rules
+- Universities & Mentors: create hands-on and practical OT cources  
+- OT Red & Blue Teams: exploit ICS and validate OT SIEM/IDS rules
+- Companies: create custom Labs and test your tools
 
 ### What You Get
 - [Labshock Demo Video](https://youtu.be/Q4HBjgnCOO0)
 - Build a complete ICS test lab in 5 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
-- Capture traffic, test SIEM rules and refine detection  
+- Capture traffic, test SIEM rules and refine IDS detection  
+
 
 ### Links
 - [Labshock Website](https://labshock.github.io/)  
@@ -35,26 +35,32 @@ Labshock lets you build and test ICS security labs - without expensive hardware.
 - [Linkedin Updates](https://www.linkedin.com/in/zakharb/)  
 
 <p align="center">
-  ⭐ If you find this project useful, please put Star ⭐
+  ⭐ please put Star ⭐
   <br><br>
   <img src="img/lab-diagram.png" alt="Labshock Diagram" />
 </p>
 
 <br><br>
-## :red_square: Support Labshock
-If you find this project useful, please consider helping:
 
-[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
+## 🟨 Support Labshock
+Help us keep Labshock growing! Your contributions support ongoing development, documentation, and community resources.
+
+### Individual Contributions
+> Support Labshock with a small donation to fund new features and maintenance.  
+
+[![Support Labshock](https://shields.io/badge/Support-Labshock-yellow?logo=labshock&style=for-the-badge)](https://ko-fi.com/zakharbernhardt)
+
+### Sponsorship & Partnerships
+> Interested in sponsoring Labshock or collaborating on OT security projects?  
+
+[![Support Labshock](https://shields.io/badge/Sponsor-Labshock-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
+  
 
 <br><br>
 ## :yellow_square: Requirements
 
-Install Docker components, thats all:
-- [Docker](https://www.docker.com/)
-- [Docker-compose](https://docs.docker.com/compose/install/)
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) *(optional)*
-
-Minimal: `CPU 2` | `RAM 4G` | `HDD 10G`  
+Install [Docker](https://www.docker.com/), thats all.  
+Minimal: `CPU 2` | `RAM 2G` | `HDD 10G`  
 Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
@@ -62,34 +68,10 @@ Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`
 </p>
 
 <br><br>
-## :yellow_square: Install & Run & Update
+## :yellow_square: Install & Update
 
-How-to: [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
+For Instructions please check [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
 Videos: [Linux](https://youtu.be/CGpizCGcHBc), [Windows](https://youtu.be/7PkIeSX6q6g)  
-
-Install 
- ```
-git clone https://github.com/zakharb/labshock.git
-cd labshock/labshock
-docker-compose build
- ```
-
-Run
-```
-docker-compose up
-```
-
-Update
- ```
-git pull
-cd labshock
-docker-compose down -v
-docker-compose build
-```
-
-❤️ If you install Labshock, consider supporting Labshock:  
-
-[![Buy me a kofi](https://shields.io/badge/kofi-Buy_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/zakharbernhardt)
 
 
 <br><br>
@@ -97,7 +79,6 @@ docker-compose build
 
 For more info check [Wiki Documentation](https://github.com/zakharb/labshock/wiki)
  
-### What's Inside
 
 ```python
 PORTAL       # Web                  # https://localhost
