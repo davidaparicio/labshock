@@ -180,7 +180,7 @@ Use Cases:
 - Decode and analyze SCADA traffic
 
 Usage:
-- open web interface http://localhost:1443
+- open web interface http://localhost:3443
 - or use command line
 ```
 ssh pentest@localhost -p 2222
