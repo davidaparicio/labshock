@@ -18,7 +18,7 @@ Labshock provides a ready-to-use environment to learn, simulate attacks and test
 ### Who is Labshock for
 - [Labshock Into Video](https://youtu.be/USo6mDEdnf4)
 - Universities & Mentors: create hands-on and practical OT cources  
-- OT Red & Blue Teams: exploit ICS and validate OT SIEM/IDS rules
+- OT Red & Blue Teams: simulate ICS and validate OT SIEM/IDS rules
 - Companies: create custom Labs and test your tools
 
 ### What You Get
@@ -170,14 +170,14 @@ Usage:
 
 Features:
 
-- Tools for Modbus, DNP3, IEC 60870-5-104, S7, OPC UA analysis
-- SCADA/PLC fuzzing, packet manipulation, and vulnerability scanning
-- Pre-installed Kali tools like Nmap, Wireshark & Metasploit
+- Tools for working with Modbus, DNP3, IEC 60870-5-104, S7, OPC UA
+- SCADA/PLC protocols capture and analysis
+- Pre-installed Kali minimal setup for custom testing
 
 Use Cases:
 - Test OT system security and ICS networks
-- Simulate attacks: replay, MITM, command injection
-- Decode and analyze SCADA traffic
+- Simulate scenarious and techniques
+- Learn different tactics and pentesting fundamentals
 
 Usage:
 - open web interface http://localhost:3443
