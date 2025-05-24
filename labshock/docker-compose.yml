@@ -13,6 +13,14 @@ networks:
         - subnet: 192.168.3.0/24
 
 services:
+  portal:
+    build: ./portal/
+    restart: unless-stopped
+    ports:
+      - "443:443"
+    volumes:
+      - portal-data:/app/config/
+
   router:
     build: ./router/
     privileged: true
@@ -75,6 +83,8 @@ services:
     ports:
       - "2222:22"
       - "3443:3443"
+    depends_on:
+      - portal
 
   ids:
     build: ./ids/
@@ -82,6 +92,8 @@ services:
     restart: unless-stopped
     environment:
       - TZ=America/New_York
+    depends_on:
+      - portal
       
   collector:
     build: ./collector/
@@ -92,14 +104,11 @@ services:
     ports:
       - "2443:2443"
       - "8766:8766"
-
-  portal:
-    build: ./portal/
-    restart: unless-stopped
-    ports:
-      - "443:443"
+    depends_on:
+      - portal
 
 volumes:
   scada-data:
   plc-data:    
   ews-data:
+  portal-data:
