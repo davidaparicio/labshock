@@ -5,7 +5,9 @@
 
 
 <br><br>
-## 🟨 Labshock - #1 Industrial Cyber Lab
+## 🟨 Labshock
+
+> #1 Industrial Cyber Lab
 
 Labshock provides a ready-to-use environment to learn, simulate attacks and test defensive strategies.
 
@@ -13,7 +15,7 @@ Labshock provides a ready-to-use environment to learn, simulate attacks and test
 - [check Website](https://labshock.github.io/)
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds
-- provide safe, real-world OT environments for learning and testing
+- safe and real OT environments for learning and testing
 
 ### Who is Labshock for
 - [Labshock Into Video](https://youtu.be/USo6mDEdnf4)
@@ -23,7 +25,7 @@ Labshock provides a ready-to-use environment to learn, simulate attacks and test
 
 ### What You Get
 - [Labshock Demo Video](https://youtu.be/Q4HBjgnCOO0)
-- Build a complete ICS test lab in 5 minutes  
+- Build a complete OT test lab in less than 10 minutes  
 - Simulate SCADA & PLCs for attack/defense training  
 - Capture traffic, test SIEM rules and refine IDS detection  
 
@@ -60,8 +62,8 @@ Help us keep Labshock growing! Your contributions support ongoing development, d
 ## :yellow_square: Requirements
 
 Install [Docker](https://www.docker.com/), thats all.  
-Minimal: `CPU 2` | `RAM 2G` | `HDD 10G`  
-Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`  
+min: `CPU 2` | `RAM 2G` | `HDD 10G`  
+max: `CPU 4` | `RAM 8G` | `HDD 20G`  
 
 <p align="center">
   <img src="img/min-req.png" />
@@ -70,14 +72,14 @@ Recommended: `CPU 4` | `RAM 8G` | `HDD 20G`
 <br><br>
 ## :yellow_square: Install & Update
 
-For Instructions please check [Quickstart Guide](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
-Videos: [Linux](https://youtu.be/CGpizCGcHBc), [Windows](https://youtu.be/7PkIeSX6q6g)  
+Guide: [Quickstart](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
+Videos: [Linux](https://youtu.be/CGpizCGcHBc) [Windows](https://youtu.be/7PkIeSX6q6g)  
 
 
 <br><br>
 ## :yellow_square: Services
 
-For more info check [Wiki Documentation](https://github.com/zakharb/labshock/wiki)
+For more info check [Wiki](https://github.com/zakharb/labshock/wiki)
  
 
 ```python
@@ -95,12 +97,11 @@ And more...
 <br><br>
 ## :yellow_square: Portal
 
-*Labshock contains Portal as central hub for accessing all services, documentation and resources.*  
+> central hub
 
-With Portal Service you can:
-- access all Labshock tools from a single interface: [https://localhost](https://localhost)
+Labshock contains Portal for accessing all services, documentation and resources:  
+- access all Labshock services from a single interface
 - navigate directly to documentation, configuration guides
-- connect to services like Network Swiftness, Tidal Collector and Pentest Fury
 - use built-in links to troubleshooting and support resources
 
 Usage:
@@ -114,7 +115,7 @@ Usage:
 <br><br>
 ## :yellow_square: PLC
 
-*Labshock contains modified version of [OpenPLC](https://autonomylogic.com)*  
+> modified version of [OpenPLC](https://autonomylogic.com)  
   
 
 PLC supports all five languages defined in the IEC 61131-3 standard: 
@@ -124,7 +125,7 @@ PLC supports all five languages defined in the IEC 61131-3 standard:
 - `FBD` Function Block Diagram
 - `SFC` Sequential Function Chart
 
-PLC supports protocols
+PLC supports protocols:
 - Modbus
 - DNP3
 - S7 (soon)
@@ -133,7 +134,6 @@ Usage:
 - login into dashboard http://localhost:8080
 - user/password `openplc/openplc`
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/PLC-service)
-- find source code on [forkedOpenPLC](https://github.com/zakharb/OpenPLC_v3)
 
 <p align="center">
   <img src="img/plc.png" alt="plc" />
@@ -142,7 +142,7 @@ Usage:
 <br><br>
 ## :yellow_square: SCADA
 
-*Labshock contains modified version of [FUXA](https://frangoteam.org)*
+> modified version of [FUXA](https://frangoteam.org)
 
 SCADA supports protocols:
 - Modbus RTU/TCP
@@ -166,13 +166,13 @@ Usage:
 <br><br>
 ## :yellow_square: Pentest Fury
 
-*Labshock includes Pentest Station tailored for OT and ICS security testing.*
+> Kali inside
 
-Features:
+Pentest Station tailored for OT and ICS security testing:
 
-- Tools for working with Modbus, DNP3, IEC 60870-5-104, S7, OPC UA
-- SCADA/PLC protocols capture and analysis
-- Pre-installed Kali minimal setup for custom testing
+- integrated web interface
+- tools for working with OT protocols
+- pre-installed Kali minimal setup
 
 Use Cases:
 - Test OT system security and ICS networks
@@ -203,9 +203,9 @@ Ready for OT-focused pentesting.
 <br><br>
 ## :yellow_square: Network Swiftness
 
-*Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments.*
+> best OT IDS
 
-Features:
+Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments:
 
 - Monitor live network traffic
 - Track active connections
