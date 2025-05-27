@@ -245,10 +245,9 @@ You can easily connect other IDS, for example [Zeek](https://github.com/zakharb/
 
 <br><br>
 ## :yellow_square: Tidal Collector
+> SIEM ready
 
-*Labshock includes Tidal Collector for efficient OT data collection and forwarding.*
-
-Features:
+Efficient OT data collection and forwarding:
 
 - Collect logs and metrics from OT devices
 - Normalize and forward data to SIEM
@@ -280,10 +279,9 @@ Ready for OT data collection and integration.
 
 <br><br>
 ## :yellow_square: EWS
+> learn ICS
 
-*Labshock contains Engineering Station for programming SCADA and PLC.*
-
-EWS comes pre-configured and ready to use:
+Engineering Station for programming SCADA and PLC:
 
 - IDE OpenPLC Editor
 - Interface to PLC
