@@ -1,1 +1,1 @@
-FROM zakharbz/labshock-collector:v1.0.0
+FROM zakharbz/labshock-collector:v1.1.0
