@@ -16,8 +16,7 @@ services:
   portal:
     build: ./portal/
     restart: unless-stopped
-    ports:
-      - "443:443"
+    network_mode: host
     volumes:
       - portal-data:/app/config/
 
