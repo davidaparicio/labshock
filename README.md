@@ -193,7 +193,13 @@ pwd: pentest
 - Pentest Fury is for personal, non-commercial use only.
 - Redistribution, modification, or commercial use is prohibited.
 - See [LICENSE](LICENSE) for details.
-  
+
+⚠️ Disclaimer:
+
+This tool is intended for use only in the Labshock virtual environment.   
+The developer is not responsible for any misuse or unauthorized access attempts.  
+Using this tool against systems without explicit permission may violate local laws or regulations.
+
 Ready for OT-focused pentesting.
 
 <p align="center">
