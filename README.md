@@ -9,7 +9,7 @@
 
 > #1 Industrial Cyber Lab
 
-Labshock provides a ready-to-use environment to learn, simulate attacks and test defensive strategies.
+Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
 
 ### Why Labshock
 - [check Website](https://labshock.github.io/)
@@ -26,7 +26,7 @@ Labshock provides a ready-to-use environment to learn, simulate attacks and test
 ### What You Get
 - [Labshock Demo Video](https://youtu.be/Q4HBjgnCOO0)
 - Build a complete OT test lab in less than 10 minutes  
-- Simulate SCADA & PLCs for attack/defense training  
+- Deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
 - Capture traffic, test SIEM rules and refine IDS detection  
 
 
@@ -176,7 +176,7 @@ Pentest Station tailored for OT and ICS security testing:
 
 Use Cases:
 - Test OT system security and ICS networks
-- Simulate scenarious and techniques
+- Simulate your own scenarious and techniques
 - Learn different tactics and pentesting fundamentals
 
 Usage:
