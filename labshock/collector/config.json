@@ -1,0 +1,40 @@
+{
+	"sources": [
+		{
+		    "name": "Test",
+		    "type": "test",
+		    "ip": "127.0.0.1",
+		    "protocol": "syslog"
+	    },
+		{
+		    "name": "Main-PLC",
+		    "type": "plc",
+		    "ip": "192.168.2.10",
+		    "protocol": "syslog"
+	    },
+		{
+		    "name": "SCADA",
+		    "type": "server",
+		    "ip": "192.168.3.20",
+		    "protocol": "syslog"
+	    },
+		{
+		    "name": "L3-Router",
+		    "type": "switch",
+		    "ip": "192.168.3.254",
+		    "protocol": "syslog"
+	    },
+		{
+		    "name": "EWS",
+		    "type": "workstation",
+		    "ip": "192.168.3.11",
+		    "protocol": "syslog"
+	    },
+		{
+		    "name": "IDS",
+		    "type": "ids",
+		    "ip": "192.168.3.1",
+		    "protocol": "syslog"
+	    }
+	]
+}
