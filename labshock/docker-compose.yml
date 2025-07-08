@@ -11,19 +11,44 @@ networks:
     ipam:
       config:
         - subnet: 192.168.3.0/24
+  dmz_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.0.0/16
 
 services:
   portal:
     build: ./portal/
-    restart: unless-stopped
     network_mode: host
     volumes:
       - portal-data:/app/config/
 
+  dmz-firewall:
+    build: ./dmz-firewall/
+    cap_add:
+      - NET_ADMIN
+    networks:
+      l3_network:
+        ipv4_address: 192.168.3.253
+      dmz_network:
+        ipv4_address: 172.16.0.253
+    ports:
+      - "5443:5443"
+
+  dmz-transfer:
+    build: ./dmz-transfer/
+    cap_add:
+      - NET_ADMIN
+    networks:
+      dmz_network:
+        ipv4_address: 172.16.0.21
+    ports:
+      - "4443:80"
+
   router:
     build: ./router/
     privileged: true
-    restart: unless-stopped
     networks:
       l2_network:
         ipv4_address: 192.168.2.254
@@ -32,7 +57,6 @@ services:
 
   scada:
     build: ./scada/
-    restart: unless-stopped
     cap_add:
       - NET_ADMIN
     networks:
@@ -45,7 +69,6 @@ services:
       
   plc:
     build: ./plc/
-    restart: unless-stopped
     cap_add:
       - NET_ADMIN
     networks:
@@ -60,7 +83,6 @@ services:
     build: ./ews/
     cap_add:
       - NET_ADMIN
-    restart: unless-stopped
     networks:
       l3_network:
         ipv4_address: 192.168.3.11
@@ -75,7 +97,6 @@ services:
       - NET_ADMIN
       - NET_RAW
     privileged: true
-    restart: unless-stopped
     networks:
       l3_network:
         ipv4_address: 192.168.3.30
@@ -88,18 +109,16 @@ services:
   ids:
     build: ./ids/
     network_mode: host
-    restart: unless-stopped
-    environment:
-      - TZ=America/New_York
     depends_on:
       - portal
       
   collector:
     build: ./collector/
+    cap_add:
+      - NET_ADMIN
     networks:
       l3_network:
         ipv4_address: 192.168.3.40
-    restart: unless-stopped
     ports:
       - "2443:2443"
       - "8766:8766"
