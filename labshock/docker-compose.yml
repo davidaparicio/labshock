@@ -20,9 +20,11 @@ networks:
 services:
   portal:
     build: ./portal/
-    network_mode: host
     volumes:
       - portal-data:/app/config/
+    ports:
+      - "443:443"
+
 
   dmz-firewall:
     build: ./dmz-firewall/
@@ -35,6 +37,8 @@ services:
         ipv4_address: 172.16.0.253
     ports:
       - "5443:5443"
+    volumes:
+      - portal-data:/app/portal/
 
   dmz-transfer:
     build: ./dmz-transfer/
@@ -45,6 +49,8 @@ services:
         ipv4_address: 172.16.0.21
     ports:
       - "4443:80"
+    volumes:
+      - portal-data:/app/portal/
 
   router:
     build: ./router/
@@ -66,6 +72,8 @@ services:
       - '1881:1881'
     volumes:
       - scada-data:/usr/src/app/FUXA/server/_appdata
+    dns:
+     - 127.0.0.11
       
   plc:
     build: ./plc/
@@ -105,12 +113,18 @@ services:
       - "3443:3443"
     depends_on:
       - portal
+    dns:
+     - 127.0.0.11
+    volumes:
+      - portal-data:/app/portal/
 
   ids:
     build: ./ids/
     network_mode: host
     depends_on:
       - portal
+    volumes:
+      - portal-data:/app/portal/
       
   collector:
     build: ./collector/
@@ -124,6 +138,8 @@ services:
       - "8766:8766"
     depends_on:
       - portal
+    volumes:
+      - portal-data:/app/portal/
 
 volumes:
   scada-data:
