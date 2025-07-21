@@ -83,7 +83,7 @@ For more info check [Wiki](https://github.com/zakharb/labshock/wiki)
  
 
 ```python
-PORTAL       # Web                  # https://localhost
+PORTAL       # Web                  # https://localhost, pwd: labshock/labshock
 PLC          # OpenPLC              # http://localhost:8080
 SCADA        # FUXA                 # http://localhost:1881, pwd: openplc/openplc
 EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engineer
@@ -106,6 +106,7 @@ Labshock contains Portal for accessing all services, documentation and resources
 
 Usage:
 - open web interface http://localhost
+- user/password `labshock/labshock`
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Portal-service)
 
 <p align="center">
