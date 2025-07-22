@@ -2,18 +2,32 @@
   <a href="https://github.com/zakharb/labshock">
   <img src="img/labshock-logo.gif" alt="logo" />
 </p>
+    
+<p align="center">
+  
+  <a href="https://labshock.github.io/">
+    <img src="https://shields.io/badge/Labshock-Website-yellow?logo=labshock&style=for-the-badge" alt="Labshock Website"/>
+  </a>
+  
+  <a href="https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF">
+    <img src="https://shields.io/badge/Youtube-Videos-yellow?logo=labshock&style=for-the-badge" alt="YouTube Videos"/>
+  </a>
+  
+  <a href="https://discord.gg/bpmaQFfW76">
+    <img src="https://shields.io/badge/Discord-Support-yellow?logo=labshock&style=for-the-badge" alt="Support Discord"/>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/zakharb/">
+    <img src="https://shields.io/badge/Linkedin-Updates-yellow?logo=labshock&style=for-the-badge" alt="LinkedIn Updates"/>
+  </a>
+
+</p>
 
 
 <br><br>
-## 🟨 Labshock
-
-> #1 Industrial Cyber Lab
+## 🟨 Labshock #1 Industrial Cyber Lab
 
 Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
-
-### ⚠️ Disclaimer
-
-You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
 
 ### Why Labshock
 - [check Website](https://labshock.github.io/)
@@ -22,25 +36,23 @@ You are running this lab at your own risk. Labshock is intended for educational 
 - safe and real OT environments for learning and testing
 
 ### Who is Labshock for
-- [Labshock Into Video](https://youtu.be/USo6mDEdnf4)
+- [watch Videos](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)
 - Universities & Mentors: create hands-on and practical OT cources  
 - OT Red & Blue Teams: simulate ICS and validate OT SIEM/IDS rules
 - Companies: create custom Labs and test your tools
 
 ### What You Get
-- [Labshock Demo Video](https://youtu.be/Q4HBjgnCOO0)
-- Build a complete OT test lab in less than 10 minutes  
-- Deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
-- Capture traffic, test SIEM rules and refine IDS detection  
+- [get Support](https://discord.gg/bpmaQFfW76)
+- build a complete OT test lab in less than 10 minutes  
+- deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
+- capture traffic, test SIEM rules and refine IDS detection  
 
 
-### Links
-- [Labshock Website](https://labshock.github.io/)  
-- [YouTube Channel](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)  
-- [Support Discord](https://discord.gg/bpmaQFfW76)  
-- [Linkedin Updates](https://www.linkedin.com/in/zakharb/)  
+> ⚠️ Disclaimer You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
+
 
 <p align="center">
+  <br><br>
   ⭐ please put Star ⭐
   <br><br>
   <img src="img/lab-diagram.png" alt="Labshock Diagram" />
@@ -235,7 +247,7 @@ Use Cases:
 - Save packet data for forensic analysis
 
 Usage:
-- open web interface http://localhost:1443
+- open http://localhost:1443
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/IDS-service)
 
 ⚠️ Windows Docker Desktop Users:
@@ -333,20 +345,20 @@ It's also possible to run `Windows` inside Labshock:
 
 Firewall service allows you to simulate and explore network segmentation in OT environments:
 
-- Simulate DMZ firewall rules and policies  
-- Analyze network flows between IT and OT zones  
-- Block, allow, or log traffic between Labshock services  
-- Test segmentation controls in a realistic setup  
+- Simulate DMZ firewall rules 
+- Analyze network flows between IT/OT
+- Test segmentation controls
+- Block / Allow traffic
 
 Use Cases:
 
-- Understand how firewalls secure OT environments  
+- Understand how firewalls secure OT
 - Detect and prevent unauthorized access  
 - Validate firewall rules for ICS zones  
 
 Usage:
 
-- open web interface http://localhost:5443
+- open http://localhost:5443
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Firewall-service)
 
 <p align="center">
@@ -360,10 +372,9 @@ Usage:
 
 Transfer service simulates typical IT/OT file transfer scenarios:
 
-- Host HTTP and FTP services for inter-zone transfer  
-- Test secure and insecure file movement across DMZ  
-- Simulate pivoting and exfiltration via public services  
-- Explore secure file delivery mechanisms  
+- Services for inter-zone transfer  
+- Test secure and insecure file movement
+- Simulate pivoting via public services  
 
 Use Cases:
 
@@ -373,7 +384,7 @@ Use Cases:
 
 Usage:
 
-- open web interface http://localhost:4443
+- open http://localhost:4443
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Transfer-service)
 
 <p align="center">
