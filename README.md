@@ -3,6 +3,20 @@
   <img src="img/labshock-logo.gif" alt="logo" />
 </p>
 
+<p align="center">
+  <a href="https://labshock.github.io/">
+    <img src="https://img.shields.io/badge/Website-Labshock-yellow?style=for-the-badge&logo=vercel" alt="Website"/>
+  </a>
+  <a href="https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF">
+    <img src="https://img.shields.io/badge/YouTube-Channel-red?style=for-the-badge&logo=youtube" alt="YouTube"/>
+  </a>
+  <a href="https://discord.gg/bpmaQFfW76">
+    <img src="https://img.shields.io/badge/Join-Discord-5865F2?style=for-the-badge&logo=discord" alt="Discord"/>
+  </a>
+  <a href="https://www.linkedin.com/in/zakharb/">
+    <img src="https://img.shields.io/badge/Follow-Linkedin-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
+  </a>
+</p>
 
 <br><br>
 ## 🟨 Labshock
@@ -10,6 +24,10 @@
 > #1 Industrial Cyber Lab
 
 Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
+
+### ⚠️ Disclaimer
+
+You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
 
 ### Why Labshock
 - [check Website](https://labshock.github.io/)
@@ -90,6 +108,8 @@ EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engin
 PENTEST      # Pentest Fury         # http://localhost:3443
 IDS          # Network Swiftness    # http://localhost:1443
 COLLECTOR    # Tidal Collector      # http://localhost:2443
+TRANSFER     # HTTP/FTP Server      # http://localhost:4443
+FIREWALL     # Linux Based          # http://localhost:5443
 And more...
 ```
 
@@ -319,6 +339,59 @@ It's also possible to run `Windows` inside Labshock:
 
 <p align="center">
   <img src="img/ews-win.png" alt="ews-win" />
+</p>
+
+<br><br>
+## :yellow_square: Firewall
+> test and learn DMZ
+
+Firewall service allows you to simulate and explore network segmentation in OT environments:
+
+- Simulate DMZ firewall rules and policies  
+- Analyze network flows between IT and OT zones  
+- Block, allow, or log traffic between Labshock services  
+- Test segmentation controls in a realistic setup  
+
+Use Cases:
+
+- Understand how firewalls secure OT environments  
+- Detect and prevent unauthorized access  
+- Validate firewall rules for ICS zones  
+
+Usage:
+
+- open web interface http://localhost:5443
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Firewall-service)
+
+<p align="center">
+  <img src="img/firewall.png" alt="firewall" />
+</p>
+
+
+<br><br>
+## :yellow_square: Transfer
+> test DMZ pivoting and secure file movement
+
+Transfer service simulates typical IT/OT file transfer scenarios:
+
+- Host HTTP and FTP services for inter-zone transfer  
+- Test secure and insecure file movement across DMZ  
+- Simulate pivoting and exfiltration via public services  
+- Explore secure file delivery mechanisms  
+
+Use Cases:
+
+- Learn OT/IT file transfer architecture  
+- Understand pivoting techniques used by attackers  
+- Test detection and mitigation of DMZ abuse  
+
+Usage:
+
+- open web interface http://localhost:4443
+- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Transfer-service)
+
+<p align="center">
+  <img src="img/transfer.png" alt="transfer" />
 </p>
 
 
