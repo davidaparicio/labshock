@@ -3,20 +3,6 @@
   <img src="img/labshock-logo.gif" alt="logo" />
 </p>
 
-<p align="center">
-  <a href="https://labshock.github.io/">
-    <img src="https://img.shields.io/badge/Website-Labshock-yellow?style=for-the-badge&logo=vercel" alt="Website"/>
-  </a>
-  <a href="https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF">
-    <img src="https://img.shields.io/badge/YouTube-Channel-red?style=for-the-badge&logo=youtube" alt="YouTube"/>
-  </a>
-  <a href="https://discord.gg/bpmaQFfW76">
-    <img src="https://img.shields.io/badge/Join-Discord-5865F2?style=for-the-badge&logo=discord" alt="Discord"/>
-  </a>
-  <a href="https://www.linkedin.com/in/zakharb/">
-    <img src="https://img.shields.io/badge/Follow-Linkedin-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
-  </a>
-</p>
 
 <br><br>
 ## 🟨 Labshock
