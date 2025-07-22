@@ -118,9 +118,10 @@ And more...
 > central hub
 
 Labshock contains Portal for accessing all services, documentation and resources:  
-- access all Labshock services from a single interface
-- navigate directly to documentation, configuration guides
-- use built-in links to troubleshooting and support resources
+- access all Labshock services
+- single interface for OT/DMZ/IT
+- navigate directly to documentation
+- find configuration guides, support
 
 Usage:
 - open web interface http://localhost
@@ -150,7 +151,7 @@ PLC supports protocols:
 - S7 (soon)
 
 Usage:
-- login into dashboard http://localhost:8080
+- open http://localhost:8080
 - user/password `openplc/openplc`
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/PLC-service)
 
@@ -173,7 +174,7 @@ SCADA supports protocols:
 - S7
 
 Usage:
-- login into main interface http://localhost:1881
+- open http://localhost:1881
 - user/password you can set in settings
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
@@ -185,26 +186,18 @@ Usage:
 <br><br>
 ## :yellow_square: Pentest Fury
 
-> Kali inside
+> Kali inside for OT-focused pentest
 
 Pentest Station tailored for OT and ICS security testing:
 
 - integrated web interface
 - tools for working with OT protocols
 - pre-installed Kali minimal setup
-
-Use Cases:
-- Test OT system security and ICS networks
-- Simulate your own scenarious and techniques
-- Learn different tactics and pentesting fundamentals
+- simulate your own scenarious
+- learn different tactics and pentesting
 
 Usage:
-- open web interface http://localhost:3443
-- or use command line
-```
-ssh pentest@localhost -p 2222
-pwd: pentest
-```
+- open http://localhost:3443
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Pentest-service)
   
 🔒 License:
@@ -213,13 +206,8 @@ pwd: pentest
 - Redistribution, modification, or commercial use is prohibited.
 - See [LICENSE](LICENSE) for details.
 
-⚠️ Disclaimer:
+> ⚠️ Disclaimer: This tool is intended for use only in the Labshock virtual environment. The developer is not responsible for any misuse or unauthorized access attempts. Using this tool against systems without explicit permission may violate local laws or regulations.
 
-This tool is intended for use only in the Labshock virtual environment.   
-The developer is not responsible for any misuse or unauthorized access attempts.  
-Using this tool against systems without explicit permission may violate local laws or regulations.
-
-Ready for OT-focused pentesting.
 
 <p align="center">
   <img src="img/pentest.png" alt="pentest" />
@@ -228,29 +216,22 @@ Ready for OT-focused pentesting.
 <br><br>
 ## :yellow_square: Network Swiftness
 
-> best OT IDS
+> best IDS for OT monitoring
 
 Labshock includes Network Swiftness for real-time network monitoring and analysis in OT environments:
 
-- Monitor live network traffic
-- Track active connections
-- Detect and classify protocols
-- Generate network topology maps
-- Capture, analyze and save packets
-- Web based: simple & easy
-
-Use Cases:
-
-- Gain visibility into OT network activity
-- Identify unauthorized connections and protocol anomalies
-- Analyze SCADA/ICS traffic patterns
-- Save packet data for forensic analysis
+- monitor live network traffic
+- track active connections
+- detect and classify protocols
+- generate network topology maps
+- capture, analyze and save packets
+- web based: simple & easy
 
 Usage:
 - open http://localhost:1443
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/IDS-service)
 
-⚠️ Windows Docker Desktop Users:
+⚠️ Windows/Mac Users:
 - navigate to Settings > Resources > Network, and check the "Enable host networking" option.
 
 🔒 License: 
@@ -258,7 +239,6 @@ Usage:
 - Redistribution, modification, or commercial use is prohibited.
 - See [LICENSE](LICENSE) for details.
 
-Ready for OT network monitoring and analysis.
 
 <p align="center">
   <img src="img/ids.png" alt="ids" />
@@ -270,26 +250,19 @@ You can easily connect other IDS, for example [Zeek](https://github.com/zakharb/
 
 <br><br>
 ## :yellow_square: Tidal Collector
-> SIEM ready
+> ready SIEM integration
 
 Efficient OT data collection and forwarding:
 
-- Collect logs and metrics from OT devices
-- Normalize and forward data to SIEM
-- Filter and enrich data before forwarding
-- Lightweight and efficient
-- Web based: simple & easy
-
-Use Cases:
-
-- Centralize OT data collection for analysis
-- Enhance SIEM visibility with OT-specific logs
-- Normalize diverse log formats
-- Reduce noise with smart filtering
+- collect logs from OT devices
+- normalize and forward data to SIEM
+- filter and enrich data before forwarding
+- lightweight and efficient
+- web based: simple & easy
 
 Usage:
 
-- open web interface http://localhost:2443
+- open http://localhost:2443
 - find more info on [wiki](https://github.com/zakharb/labshock/wiki/Collector-service)
 
 🔒 License:
@@ -298,7 +271,6 @@ Usage:
 - Redistribution, modification, or commercial use is prohibited.
 - See [LICENSE](LICENSE) for details.
 
-Ready for OT data collection and integration.
 
 <p align="center"> <img src="img/collector.png" alt="collector" /> </p>
 
@@ -315,9 +287,8 @@ Engineering Station for programming SCADA and PLC:
 
 Usage:
 
-- login into noVNC interface http://localhost:5911/vnc.html
+- login http://localhost:5911/vnc.html
 - password `engineer`
-- all links/projects are on Desktop
 - access PLC/SCADA via browser
 - access IDE via OpenPLC Editor
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
@@ -331,7 +302,7 @@ Usage:
 ### Windows
 
 It's also possible to run `Windows` inside Labshock:
-- check & use this github repo [dockur/windows](https://github.com/dockur/windows)
+- check & use this repo [dockur/windows](https://github.com/dockur/windows)
 - use at your own risk & effort
 
 
@@ -345,16 +316,10 @@ It's also possible to run `Windows` inside Labshock:
 
 Firewall service allows you to simulate and explore network segmentation in OT environments:
 
-- Simulate DMZ firewall rules 
-- Analyze network flows between IT/OT
-- Test segmentation controls
-- Block / Allow traffic
-
-Use Cases:
-
-- Understand how firewalls secure OT
-- Detect and prevent unauthorized access  
-- Validate firewall rules for ICS zones  
+- simulate DMZ firewall rules 
+- analyze network flows between IT/OT
+- test segmentation controls
+- block / allow traffic
 
 Usage:
 
@@ -372,15 +337,9 @@ Usage:
 
 Transfer service simulates typical IT/OT file transfer scenarios:
 
-- Services for inter-zone transfer  
-- Test secure and insecure file movement
-- Simulate pivoting via public services  
-
-Use Cases:
-
-- Learn OT/IT file transfer architecture  
-- Understand pivoting techniques used by attackers  
-- Test detection and mitigation of DMZ abuse  
+- learn OT/IT file transfer architecture
+- simulate pivoting via public services
+- test detection & mitigation of DMZ abuse  
 
 Usage:
 
