@@ -339,7 +339,7 @@ Transfer service simulates typical IT/OT file transfer scenarios:
 
 - learn OT/IT file transfer architecture
 - simulate pivoting via public services
-- test detection & mitigation of DMZ abuse  
+- test detection of DMZ abuse  
 
 Usage:
 
