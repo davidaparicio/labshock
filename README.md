@@ -55,21 +55,18 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
 <br><br>
 
 ## 🟨 Support Labshock
-Help us keep Labshock growing! Your contributions support ongoing development, documentation, and community resources.
+> help us keep Labshock growing!  
 
-### Individual Contributions
-> Support Labshock with a small donation to fund new features and maintenance.  
+Support Labshock with a small donation  
+[![Sponsor Ship](https://shields.io/badge/Sponsor-ship-yellow?logo=labshock&style=for-the-badge)](https://ko-fi.com/zakharbernhardt)
 
-[![Support Labshock](https://shields.io/badge/Support-Labshock-yellow?logo=labshock&style=for-the-badge)](https://ko-fi.com/zakharbernhardt)
+Collaborate with your OT security projects  
+[![Partner Ship](https://shields.io/badge/Partner-ship-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
 
-### Sponsorship & Partnerships
-> Interested in sponsoring Labshock or collaborating on OT security projects?  
-
-[![Support Labshock](https://shields.io/badge/Sponsor-Labshock-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
   
-
 <br><br>
-## :yellow_square: Requirements
+## :yellow_square: Requirements  
+> what you need to run Labshock
 
 Install [Docker](https://www.docker.com/), thats all.  
 min: `CPU 2` | `RAM 2G` | `HDD 10G`  
