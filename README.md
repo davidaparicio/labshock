@@ -63,8 +63,7 @@ Support Labshock with a small donation
 Collaborate with your OT security projects  
 [![Partner Ship](https://shields.io/badge/Partner-ship-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
 
-  
-<br><br>
+<br><br>  
 ## :yellow_square: Requirements  
 > what you need to run Labshock
 
@@ -75,6 +74,20 @@ max: `CPU 4` | `RAM 8G` | `HDD 20G`
 <p align="center">
   <img src="img/min-req.png" />
 </p>
+
+## :yellow_square: Trial License Info
+> free with time limitations
+
+Labshock is free to explore with a built-in trial mode. 
+No license needed to get started.
+
+When you run Labshock without a license, it starts in trial mode:
+
+- 5-minute initialization delay — every start in trial mode requires a short wait  
+- 40-minute session limit — after that, Labshock automatically stops  
+- You can restart Labshock as many times as you like  
+
+Reach out for long-term use, education, or enterprise deployments.
 
 <br><br>
 ## :yellow_square: Install & Update
