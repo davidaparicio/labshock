@@ -3,6 +3,29 @@
   <img src="img/labshock-logo.gif" alt="logo" />
 </p>
     
+<br>
+
+
+## 🟨 #1 Industrial Cyber Lab
+
+Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
+
+### Why Labshock
+- save 90% of time on setup and maintenance  
+- reduce costs by 95% compared to physical testbeds
+- safe and real OT environments for learning and testing
+
+### Who can use Labshock
+- Individuals: learn OT security in practical hands-on style 
+- Universities & Mentors: create hands-on and practical OT cources  
+- Companies: create custom Labs and test your Red/Blue teams
+
+### What gives you Labshock
+- build a complete OT test lab in less than 10 minutes  
+- deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
+- capture traffic, test SIEM rules and refine IDS detection  
+
+
 <p align="center">
   
   <a href="https://labshock.github.io/">
@@ -23,36 +46,7 @@
 
 </p>
 
-
-<br><br>
-## 🟨 Labshock #1 Industrial Cyber Lab
-
-Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
-
-### Why Labshock
-- [check Website](https://labshock.github.io/)
-- save 90% of time on setup and maintenance  
-- reduce costs by 95% compared to physical testbeds
-- safe and real OT environments for learning and testing
-
-### Who is Labshock for
-- [watch Videos](https://www.youtube.com/playlist?list=PLC93sRj_3EZ2Ydl1t5Kr6p4klYDLDEQUF)
-- Universities & Mentors: create hands-on and practical OT cources  
-- OT Red & Blue Teams: simulate ICS and validate OT SIEM/IDS rules
-- Companies: create custom Labs and test your tools
-
-### What You Get
-- [get Support](https://discord.gg/bpmaQFfW76)
-- build a complete OT test lab in less than 10 minutes  
-- deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
-- capture traffic, test SIEM rules and refine IDS detection  
-
-
-> ⚠️ Disclaimer You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
-
-
 <p align="center">
-  <br><br>
   ⭐ please put Star ⭐
   <br><br>
   <img src="img/lab-diagram.png" alt="Labshock Diagram" />
@@ -87,6 +81,8 @@ max: `CPU 4` | `RAM 8G` | `HDD 20G`
 
 <br><br>
 ## :yellow_square: Install & Update
+
+> ⚠️ Disclaimer You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
 
 Guide: [Quickstart](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
 Videos: [Linux](https://youtu.be/CGpizCGcHBc) [Windows](https://youtu.be/7PkIeSX6q6g)  
