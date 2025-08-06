@@ -27,8 +27,22 @@ services:
     build: ./portal/
     volumes:
       - portal-data:/app/config/
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "443:443"
+
+  it-splunk:
+    image: splunk/splunk:latest
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=labshock
+    ports:
+      - "8443:8000"
+    networks:
+      it_network:
+        ipv4_address: 10.110.0.40
+    profiles:
+      - splunk
 
   dmz-firewall:
     build: ./dmz-firewall/
@@ -186,3 +200,4 @@ volumes:
   ot-collector-data:
   dmz-collector-data:
   dmz-firewall-data:
+  splunk-data:
