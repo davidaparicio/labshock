@@ -1,4 +1,4 @@
-version: '3.9'
+name: labshock
 
 networks:
   l2_network:
@@ -27,9 +27,13 @@ services:
     build: ./portal/
     volumes:
       - portal-data:/app/config/
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./docker-compose.yml:/app/docker/docker-compose.yml
     ports:
       - "443:443"
-
+    environment:
+      - LABSHOCK_VERSION=1.8.0
+  
   dmz-firewall:
     build: ./dmz-firewall/
     cap_add:
@@ -177,6 +181,20 @@ services:
       - portal-data:/app/portal/
       - ot-collector-data:/app/config/
 
+  it-splunk:
+    image: splunk/splunk:10.0
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_GENERAL_TERMS=--accept-sgt-current-at-splunk-com
+      - SPLUNK_PASSWORD=labshock
+    ports:
+      - "8443:8000"
+    networks:
+      it_network:
+        ipv4_address: 10.110.0.40
+    profiles:
+      - it-splunk
+      
 volumes:
   scada-data:
   plc-data:    
