@@ -371,10 +371,10 @@ Labshock can forward OT events directly into your SIEM:
 Usage:
 - open Portal IT section
 - click start/connect
-<p align="center"> <img width="70%" src="https://github.com/user-attachments/assets/86b98adb-3abc-48ac-807f-bba046ac097c" />  </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/86b98adb-3abc-48ac-807f-bba046ac097c" />  </p>
 
 - login to your SIEM (here is Splunk)
-<p align="center"> <img width="70%" src="https://github.com/user-attachments/assets/6097cdcb-92be-4cde-b33f-407ada7eb7bf" />  </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/6097cdcb-92be-4cde-b33f-407ada7eb7bf" />  </p>
 
 
 <br><br>
