@@ -1,0 +1,16 @@
+[
+  {
+    "name": "DMZ-Transfer",
+    "type": "workstation",
+    "ip": "172.16.0.21",
+    "protocol": "syslog",
+    "state": "on"
+  },
+  {
+    "name": "DMZ-Firewall",
+    "type": "firewall",
+    "ip": "172.16.0.253",
+    "protocol": "syslog",
+    "state": "on"
+  }
+]

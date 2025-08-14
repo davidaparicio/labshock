@@ -9,8 +9,9 @@
 # Remove line below to have internet access
 #ip route del default
 # Use at your own risk!
-sleep 2
+sleep 12
 
-ip route add 172.16.0.0/16 via 192.168.3.253
+ip route add 10.0.0.0/8 via 172.16.0.253
+ip route add 192.168.3.0/24 via 172.16.0.253
 
 exec "$@"
