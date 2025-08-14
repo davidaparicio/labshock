@@ -356,6 +356,26 @@ Usage:
   <img src="img/transfer.png" alt="transfer" />
 </p>
 
+<br><br>
+:yellow_square: SIEM
+> integrate with your existing SIEM
+
+Labshock can forward OT events directly into your SIEM:
+
+- ready Splunk integration (community request)
+- collectors pre-configured for quick setup
+- supports log forwarding to any SIEM
+- send events from OpenPLC, SCADA, IDS, and more
+- real OT data for correlation and detection testing
+
+Usage:
+- open Portal IT section
+- click start/connect
+<p align="center"> <img width="70%" src="https://github.com/user-attachments/assets/86b98adb-3abc-48ac-807f-bba046ac097c" />  </p>
+
+- login to your SIEM (here is Splunk)
+<p align="center"> <img width="70%" src="https://github.com/user-attachments/assets/6097cdcb-92be-4cde-b33f-407ada7eb7bf" />  </p>
+
 
 <br><br>
 ## :yellow_square: Versioning
