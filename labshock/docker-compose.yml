@@ -28,6 +28,11 @@ services:
     volumes:
       - portal-data:/app/config/
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./docker-compose.yml:/app/docker/docker-compose.yml 
+    ports:
+      - "443:443"   
+    environment:
+      - LABSHOCK_VERSION=1.8.0
 
   dmz-firewall:
     build: ./dmz-firewall/
