@@ -21,7 +21,11 @@ networks:
     ipam:
       config:
         - subnet: 10.110.0.0/16
-
+  mirror_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.31.0.0/24
 services:
   portal:
     build: ./portal/
@@ -103,7 +107,8 @@ services:
         ipv4_address: 192.168.2.254
       l3_network:
         ipv4_address: 192.168.3.254
-
+      mirror_network:
+        ipv4_address: 172.31.0.2
   scada:
     build: ./scada/
     cap_add:
@@ -113,8 +118,8 @@ services:
         ipv4_address: 192.168.3.20
     ports:
       - '1881:1881'
-    volumes:
-      - scada-data:/usr/src/app/FUXA/server/_appdata
+    # volumes:
+    #   - scada-data:/usr/src/app/FUXA/server/_appdata
     dns:
      - 127.0.0.11
       
@@ -127,8 +132,8 @@ services:
         ipv4_address: 192.168.2.10
     ports:
       - "8080:8080"
-    volumes:
-      - plc-data:/workdir/webserver
+    # volumes:
+    #   - plc-data:/workdir/webserver
 
   ews:
     build: ./ews/
@@ -160,12 +165,20 @@ services:
 
   ids:
     build: ./ids/
-    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
     depends_on:
       - portal
     volumes:
       - portal-data:/app/portal/
-      
+    # ports:
+    #   - "1443:1443"      
+    # networks:
+    #   mirror_network:
+    #     ipv4_address: 172.31.0.3  
+    network_mode: host
+
   collector:
     build: ./collector/
     cap_add:

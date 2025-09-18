@@ -12,5 +12,12 @@
     "ip": "172.16.0.253",
     "protocol": "syslog",
     "state": "on"
+  },
+  {
+    "name": "OT-Collector",
+    "type": "collector",
+    "ip": "192.168.3.40",
+    "protocol": "syslog",
+    "state": "on"
   }
 ]
