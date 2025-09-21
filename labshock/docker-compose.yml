@@ -26,6 +26,7 @@ networks:
     ipam:
       config:
         - subnet: 172.31.0.0/24
+        
 services:
   portal:
     build: ./portal/
@@ -194,6 +195,51 @@ services:
         ipv4_address: 10.110.0.40
     profiles:
       - it-splunk
+    mem_limit: 512m
+  
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.14.1
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    networks:
+      it_network:
+        ipv4_address: 10.110.0.52
+    profiles:
+      - it-elk
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.14.1
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "9443:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      it_network:
+        ipv4_address: 10.110.0.51
+    profiles:
+      - it-elk
+
+  logstash:
+    build:
+      context: ./it-elk/logstash/
+    depends_on:
+      - elasticsearch
+    networks:
+      it_network:
+        ipv4_address: 10.110.0.50
+    profiles:
+      - it-elk
       
 volumes:
   portal-data:
+  splunk-data:
