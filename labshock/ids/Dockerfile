@@ -1,1 +1,1 @@
-FROM zakharbz/labshock-ids:v1.4.2
+FROM zakharbz/labshock-ids:v1.4.1
