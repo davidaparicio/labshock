@@ -4,6 +4,8 @@
     "type": "ns",
     "ip": "127.0.0.1",
     "protocol": "syslog",
+    "impact": "high",
+    "zone": "L3",        
     "state": "on"
   },
   {
@@ -11,6 +13,8 @@
     "type": "plc",
     "ip": "192.168.2.10",
     "protocol": "syslog",
+    "impact": "high",
+    "zone": "L2",        
     "state": "on"
   },
   {
@@ -18,13 +22,17 @@
     "type": "server",
     "ip": "192.168.3.20",
     "protocol": "syslog",
+    "impact": "medium",
+    "zone": "L3",    
     "state": "on"
   },
   {
     "name": "L3-Router",
     "type": "switch",
     "ip": "192.168.3.254",
-    "protocol": "syslog",
+    "protocol": "syslog",    
+    "impact": "low",
+    "zone": "L3",    
     "state": "on"
   },
   {
@@ -32,13 +40,8 @@
     "type": "workstation",
     "ip": "192.168.3.11",
     "protocol": "syslog",
-    "state": "on"
-  },
-  {
-    "name": "NS",
-    "type": "ns",
-    "ip": "192.168.3.1",
-    "protocol": "syslog",
+    "impact": "medium",
+    "zone": "L3",    
     "state": "on"
   }
 ]

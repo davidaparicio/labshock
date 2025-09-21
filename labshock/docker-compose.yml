@@ -21,18 +21,22 @@ networks:
     ipam:
       config:
         - subnet: 10.110.0.0/16
-
+  mirror_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.31.0.0/24
 services:
   portal:
     build: ./portal/
     volumes:
       - portal-data:/app/config/
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./docker-compose.yml:/app/docker/docker-compose.yml 
+      - ./:/app/docker/
     ports:
       - "443:443"   
     environment:
-      - LABSHOCK_VERSION=1.8.0
+      - LABSHOCK_VERSION=1.8.1
 
   dmz-firewall:
     build: ./dmz-firewall/
@@ -49,7 +53,6 @@ services:
       - "5443:5443"
     volumes:
       - portal-data:/app/portal/
-      - dmz-firewall-data:/app/config/
 
   dmz-collector:
     build: ./dmz-collector/
@@ -64,7 +67,6 @@ services:
       - portal
     volumes:
       - portal-data:/app/portal/
-      - dmz-collector-data:/app/config/
 
   dmz-transfer:
     build: ./dmz-transfer/
@@ -103,6 +105,8 @@ services:
         ipv4_address: 192.168.2.254
       l3_network:
         ipv4_address: 192.168.3.254
+      mirror_network:
+        ipv4_address: 172.31.0.2
 
   scada:
     build: ./scada/
@@ -113,8 +117,6 @@ services:
         ipv4_address: 192.168.3.20
     ports:
       - '1881:1881'
-    volumes:
-      - scada-data:/usr/src/app/FUXA/server/_appdata
     dns:
      - 127.0.0.11
       
@@ -127,8 +129,6 @@ services:
         ipv4_address: 192.168.2.10
     ports:
       - "8080:8080"
-    volumes:
-      - plc-data:/workdir/webserver
 
   ews:
     build: ./ews/
@@ -139,8 +139,6 @@ services:
         ipv4_address: 192.168.3.11
     ports:
       - "5911:5911"
-    volumes:
-      - ews-data:/home/engineer/
 
   pentest:
     build: ./pentest/
@@ -160,12 +158,15 @@ services:
 
   ids:
     build: ./ids/
-    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
     depends_on:
       - portal
     volumes:
       - portal-data:/app/portal/
-      
+    network_mode: host
+
   collector:
     build: ./collector/
     cap_add:
@@ -179,7 +180,6 @@ services:
       - portal
     volumes:
       - portal-data:/app/portal/
-      - ot-collector-data:/app/config/
 
   it-splunk:
     image: splunk/splunk:10.0
@@ -196,12 +196,4 @@ services:
       - it-splunk
       
 volumes:
-  scada-data:
-  plc-data:    
-  ews-data:
   portal-data:
-  collector-data:
-  ot-collector-data:
-  dmz-collector-data:
-  dmz-firewall-data:
-  splunk-data:

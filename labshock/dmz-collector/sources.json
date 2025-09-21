@@ -1,9 +1,20 @@
 [
   {
+    "name": "OT-Collector",
+    "type": "collector",
+    "ip": "192.168.3.40",
+    "protocol": "syslog",
+    "impact": "low",
+    "zone": "L3",    
+    "state": "on"
+  },
+  {
     "name": "DMZ-Transfer",
     "type": "workstation",
     "ip": "172.16.0.21",
     "protocol": "syslog",
+    "impact": "low",
+    "zone": "DMZ",    
     "state": "on"
   },
   {
@@ -11,6 +22,8 @@
     "type": "firewall",
     "ip": "172.16.0.253",
     "protocol": "syslog",
+    "impact": "high",
+    "zone": "DMZ",    
     "state": "on"
   }
 ]
