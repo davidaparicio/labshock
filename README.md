@@ -5,6 +5,12 @@
     
 <br>
 
+> ⚠️ **Disclaimer**  
+Labshock is provided strictly for **educational and training use in fully isolated environments**.  
+Never use Labshock or its components against production systems or networks you do not own or have explicit permission to test.  
+The author is not responsible for any misuse, data loss, or legal issues that may arise.  
+
+<br>
 
 ## 🟨 #1 Industrial Cyber Lab
 
@@ -18,13 +24,12 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
 ### Who can use Labshock
 - Individuals: learn OT security in practical hands-on style 
 - Universities & Mentors: create hands-on and practical OT cources  
-- Companies: create custom Labs and test your Red/Blue teams
+- Companies: run defensive learning scenarios in safe environments  
 
 ### What gives you Labshock
 - build a complete OT test lab in less than 10 minutes  
 - deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
-- capture traffic, test SIEM rules and refine IDS detection  
-
+- Capture traffic, test SIEM rules, and refine IDS detection in a safe lab  
 
 <p align="center">
   
@@ -47,7 +52,7 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
 </p>
 
 <p align="center">
-  ⭐ please put Star ⭐
+  ⭐ please give Labshock a Star ⭐
   <br><br>
   <img src="img/lab-diagram.png" alt="Labshock Diagram" />
 </p>
@@ -57,10 +62,10 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
 ## 🟨 Support Labshock
 > help us keep Labshock growing!  
 
-Support Labshock with a small donation  
+Support with a donation    
 [![Sponsor Ship](https://shields.io/badge/Sponsor-ship-yellow?logo=labshock&style=for-the-badge)](https://ko-fi.com/zakharbernhardt)
 
-Collaborate with your OT security projects  
+Collaborate on OT security projects  
 [![Partner Ship](https://shields.io/badge/Partner-ship-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
 
 <br><br>  
@@ -83,9 +88,9 @@ No license needed to get started.
 
 When you run Labshock without a license, it starts in trial mode:
 
-- 5-minute initialization delay — every start in trial mode requires a short wait  
-- 40-minute session limit — after that, Labshock automatically stops  
-- You can restart Labshock as many times as you like  
+- 5-minute initialization delay  
+- 40-minute session limit (can restart as needed)  
+- Unlimited restarts  
 
 Reach out for long-term use, education, or enterprise deployments.
 
@@ -106,10 +111,10 @@ For more info check [Wiki](https://github.com/zakharb/labshock/wiki)
 
 ```python
 PORTAL       # Web                  # https://localhost, pwd: labshock/labshock
-PLC          # OpenPLC              # http://localhost:8080
-SCADA        # FUXA                 # http://localhost:1881, pwd: openplc/openplc
-EWS          # Kali Linux           # http://localhost:5911/vnc.html, pwd: engineer
-PENTEST      # Pentest Fury         # http://localhost:3443
+PLC          # OpenPLC              # http://localhost:8080, pwd: openplc/openplc
+SCADA        # FUXA                 # http://localhost:1881
+EWS          # Linux                # http://localhost:5911/vnc.html, pwd: engineer
+PENTEST      # Pentest Fury         # http://localhost:3443, pwd: pentest/pentest
 IDS          # Network Swiftness    # http://localhost:1443
 COLLECTOR    # Tidal Collector      # http://localhost:2443
 TRANSFER     # HTTP/FTP Server      # http://localhost:4443
@@ -125,9 +130,8 @@ And more...
 
 Labshock contains Portal for accessing all services, documentation and resources:  
 - access all Labshock services
-- single interface for OT/DMZ/IT
-- navigate directly to documentation
-- find configuration guides, support
+- navigate OT/DMZ/IT labs
+- find guides & documentation
 
 Usage:
 - open web interface http://localhost
@@ -192,15 +196,17 @@ Usage:
 <br><br>
 ## :yellow_square: Pentest Fury
 
-> Kali inside for OT-focused pentest
+> tools for learning ICS protocols
 
-Pentest Station tailored for OT and ICS security testing:
+⚠️ Pentest Fury includes tools for learning OT/ICS protocols and practicing defensive techniques in fully isolated Labshock labs. 
+Using these tools against real networks is strictly prohibited.
+Labshock’s learning station for OT/ICS protocol exploration:  
 
 - integrated web interface
-- tools for working with OT protocols
-- pre-installed Kali minimal setup
-- simulate your own scenarious
-- learn different tactics and pentesting
+- practice protocol interactions in safe lab
+- pre-installed tools for easy setup
+- practice custom exercises in isolated lab
+- learn different defensive techniques
 
 Usage:
 - open http://localhost:3443
@@ -345,7 +351,8 @@ Transfer service simulates typical IT/OT file transfer scenarios:
 
 - learn OT/IT file transfer architecture
 - simulate pivoting via public services
-- test detection of DMZ abuse  
+- check segmentation in controlled labs  
+- observe and learn traffic flows
 
 Usage:
 
@@ -376,6 +383,15 @@ Usage:
 - login to your SIEM (here is Splunk)
 <p align="center"> <img src="https://github.com/user-attachments/assets/6097cdcb-92be-4cde-b33f-407ada7eb7bf" />  </p>
 
+<br><br>
+## :yellow_square: Use Policy
+
+Labshock is for educational and training purposes only.
+
+- Allowed: personal, academic and non-commercial lab use.  
+- Not allowed: use against production, third-party, or real-world systems.  
+- Not allowed: redistribution, modification, or commercial use without license.  
+- External open-source tools retain their own licenses.  
 
 <br><br>
 ## :yellow_square: Versioning
@@ -394,7 +410,7 @@ See also the list of [contributors](https://github.com/zakharb/labshock/contribu
 <br><br>
 ## :yellow_square: License
 
-© 2025 Zakhar Bernhardt  
+© 2025 Labshock Security 
 Labshock contains open-source and proprietary components.   
 See the [LICENSE](LICENSE) file for details.  
 
