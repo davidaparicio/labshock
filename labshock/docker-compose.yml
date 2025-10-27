@@ -29,7 +29,7 @@ networks:
         
 services:
   portal:
-    build: ./portal/
+    image: zakharbz/labshock-portal:latest
     volumes:
       - portal-data:/app/config/
       - /var/run/docker.sock:/var/run/docker.sock
@@ -37,7 +37,9 @@ services:
     ports:
       - "443:443"   
     environment:
-      - LABSHOCK_VERSION=1.8.1
+      PORTAL_VERSION: 2.0.0
+      PLATFORM_URL: https://world.labshocksecurity.com
+
 
   dmz-firewall:
     build: ./dmz-firewall/
@@ -54,6 +56,8 @@ services:
       - "5443:5443"
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   dmz-collector:
     build: ./dmz-collector/
@@ -64,10 +68,10 @@ services:
         ipv4_address: 172.16.0.40
     ports:
       - "6443:2443"
-    depends_on:
-      - portal
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   dmz-transfer:
     build: ./dmz-transfer/
@@ -80,9 +84,11 @@ services:
       - "4443:80"
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   dmz-pentest:
-    build: ./pentest/
+    build: ./dmz-pentest/
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -92,10 +98,10 @@ services:
     ports:
       - "3222:22"
       - "7443:3443"
-    depends_on:
-      - portal
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   router:
     build: ./router/
@@ -108,6 +114,8 @@ services:
         ipv4_address: 192.168.3.254
       mirror_network:
         ipv4_address: 172.31.0.2
+    depends_on:
+      - portal
 
   scada:
     build: ./scada/
@@ -152,21 +160,23 @@ services:
     ports:
       - "2222:22"
       - "3443:3443"
-    depends_on:
-      - portal
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   ids:
     build: ./ids/
     cap_add:
       - NET_ADMIN
       - NET_RAW
-    depends_on:
-      - portal
+    network_mode: host
+    environment:
+      LICENSE_URL: localhost     
     volumes:
       - portal-data:/app/portal/
-    network_mode: host
+    depends_on:
+      - portal
 
   collector:
     build: ./collector/
@@ -177,10 +187,10 @@ services:
         ipv4_address: 192.168.3.40
     ports:
       - "2443:2443"
-    depends_on:
-      - portal
     volumes:
       - portal-data:/app/portal/
+    depends_on:
+      - portal
 
   it-splunk:
     image: splunk/splunk:10.0

@@ -1,1 +1,1 @@
-FROM zakharbz/labshock-portal:v1.4.2
+FROM zakharbz/labshock-portal:v2.0.0
