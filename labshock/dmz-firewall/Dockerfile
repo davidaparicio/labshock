@@ -1,4 +1,4 @@
-FROM zakharbz/labshock-firewall:v1.1.0
+FROM zakharbz/labshock-firewall:v2.0.0
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
