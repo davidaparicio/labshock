@@ -205,7 +205,10 @@ services:
         ipv4_address: 10.110.0.40
     profiles:
       - it-splunk
-    mem_limit: 512m
+    mem_limit: 2g
+    volumes:
+      - ./splunk-data/etc:/opt/splunk/etc
+      - ./splunk-data/var:/opt/splunk/var    
   
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.14.1
