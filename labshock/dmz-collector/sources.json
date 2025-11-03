@@ -2,7 +2,7 @@
   {
     "name": "OT-Collector",
     "type": "collector",
-    "ip": "192.168.3.40",
+    "ip": "192.168.3.19",
     "protocol": "syslog",
     "impact": "low",
     "zone": "L3",    
@@ -18,9 +18,9 @@
     "state": "on"
   },
   {
-    "name": "DMZ-Firewall",
+    "name": "DMZ-Router",
     "type": "firewall",
-    "ip": "172.16.0.253",
+    "ip": "172.16.0.2",
     "protocol": "syslog",
     "impact": "high",
     "zone": "DMZ",    

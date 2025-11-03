@@ -11,6 +11,7 @@
 # Use at your own risk!
 sleep 2
 
-ip route add 172.16.0.0/16 via 192.168.3.253
+ip route add 172.16.0.0/16 via 192.168.3.18
+ip route add 192.168.3.0/24 via 192.168.3.18
 
 exec "$@"
