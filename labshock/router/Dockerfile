@@ -1,7 +1,11 @@
-FROM zakharbz/labshock-router:v1.0.1
+FROM zakharbz/labshock-router:v2.0.1
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
 ENTRYPOINT ["/entrypoint.sh"]
-CMD while true; do sleep 3600; done
+
+COPY ./rules.json /app/config
+COPY ./config.json /app/config
+
+WORKDIR /app
+CMD ["sh", "-c", "nginx -g 'daemon off;' & python3 start.py"]

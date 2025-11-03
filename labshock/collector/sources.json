@@ -2,7 +2,7 @@
   {
     "name": "NS",
     "type": "ns",
-    "ip": "127.0.0.1",
+    "ip": "192.168.3.20",
     "protocol": "syslog",
     "impact": "high",
     "zone": "L3",        
@@ -20,7 +20,7 @@
   {
     "name": "SCADA",
     "type": "server",
-    "ip": "192.168.3.20",
+    "ip": "192.168.3.3",
     "protocol": "syslog",
     "impact": "medium",
     "zone": "L3",    
@@ -29,7 +29,7 @@
   {
     "name": "L3-Router",
     "type": "switch",
-    "ip": "192.168.3.254",
+    "ip": "192.168.3.2",
     "protocol": "syslog",    
     "impact": "low",
     "zone": "L3",    
@@ -38,7 +38,7 @@
   {
     "name": "EWS",
     "type": "workstation",
-    "ip": "192.168.3.11",
+    "ip": "192.168.3.4",
     "protocol": "syslog",
     "impact": "medium",
     "zone": "L3",    

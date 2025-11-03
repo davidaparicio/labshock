@@ -11,6 +11,6 @@
 # Use at your own risk!
 
 
-ip route add 192.168.3.0/24 via 192.168.2.254
+ip route add 192.168.3.0/24 via 192.168.2.2
 
 exec "$@"
