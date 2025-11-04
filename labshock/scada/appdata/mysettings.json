@@ -8,8 +8,7 @@
         "host": "",
         "port": 587,
         "mailsender": "",
-        "username": "",
-        "password": ""
+        "username": ""
     },
     "daqstore": {
         "type": "SQlite",
@@ -20,6 +19,6 @@
         "retention": "year1"
     },
     "logFull": false,
-    "syslogHost": "192.168.3.19",
+    "syslogHost": "192.168.4.40",
     "syslogPort": 514
 }

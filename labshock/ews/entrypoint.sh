@@ -12,7 +12,8 @@
 
 
 ip route add 192.168.2.0/24 via 192.168.3.2
-ip route add 192.168.3.0/24 via 192.168.3.2
+ip route add 192.168.4.0/24 via 192.168.3.2
+ip route add 192.168.5.0/24 via 192.168.3.2
 ip route add 172.16.0.0/16 via 192.168.3.2
 
 rm -r /tmp/.X11-unix/
