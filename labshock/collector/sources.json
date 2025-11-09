@@ -2,7 +2,7 @@
   {
     "name": "NS",
     "type": "ns",
-    "ip": "192.168.3.20",
+    "ip": "192.168.4.41",
     "protocol": "syslog",
     "impact": "high",
     "zone": "L3",        
