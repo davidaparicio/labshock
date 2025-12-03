@@ -12,7 +12,7 @@
 
 
 
-ip route add 172.16.0.0/16 via 192.168.3.242
+ip route add 172.16.0.0/16 via 192.168.0.2
 sleep 1
 
 exec "$@"

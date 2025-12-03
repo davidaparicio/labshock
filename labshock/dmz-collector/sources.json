@@ -2,7 +2,7 @@
   {
     "name": "OT-Collector",
     "type": "collector",
-    "ip": "192.168.3.40",
+    "ip": "192.168.4.40",
     "protocol": "syslog",
     "impact": "low",
     "zone": "L3",    
