@@ -1,4 +1,4 @@
-FROM zakharbz/labshock-collector:v2.0.0
+FROM zakharbz/labshock-collector:v2.0.1
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
