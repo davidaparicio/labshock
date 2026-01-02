@@ -12,16 +12,21 @@ The author is not responsible for any misuse, data loss, or legal issues that ma
 
 <br>
 
+
 ## 🟨 #1 Industrial Cyber Lab
 
 Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
+
+Unlike Labshock 1.x, version 2.x introduces a **centralized Portal architecture** where labs, services, and scenarios are managed dynamically.
 
 ### Why Labshock
 - save 90% of time on setup and maintenance  
 - reduce costs by 95% compared to physical testbeds
 - safe and real OT environments for learning and testing
-
-### Who can use Labshock
+- learn OT security with hands-on labs, not slides
+- dynamically managed labs via Portal
+  
+### Who Is It For
 - Individuals: learn OT security in practical hands-on style 
 - Universities & Mentors: create hands-on and practical OT cources  
 - Companies: run defensive learning scenarios in safe environments  
@@ -33,7 +38,7 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
 
 <p align="center">
   
-  <a href="https://labshock.github.io/">
+  <a href="https://labshocksecurity.com/">
     <img src="https://shields.io/badge/Labshock-Website-yellow?logo=labshock&style=for-the-badge" alt="Labshock Website"/>
   </a>
   
@@ -56,17 +61,6 @@ Labshock provides a ready-to-use environment to learn, simulate and test defensi
   <br><br>
   <img src="img/lab-diagram.png" alt="Labshock Diagram" />
 </p>
-
-<br><br>
-
-## 🟨 Support Labshock
-> help us keep Labshock growing!  
-
-Support with a donation    
-[![Sponsor Ship](https://shields.io/badge/Sponsor-ship-yellow?logo=labshock&style=for-the-badge)](https://ko-fi.com/zakharbernhardt)
-
-Collaborate on OT security projects  
-[![Partner Ship](https://shields.io/badge/Partner-ship-yellow?logo=labshock&style=for-the-badge)](https://www.linkedin.com/in/zakharb/)
 
 <br><br>  
 ## :yellow_square: Requirements  
@@ -104,29 +98,9 @@ Videos: [Linux](https://youtu.be/CGpizCGcHBc) [Windows](https://youtu.be/7PkIeSX
 
 
 <br><br>
-## :yellow_square: Services
-
-For more info check [Wiki](https://github.com/zakharb/labshock/wiki)
- 
-
-```python
-PORTAL       # Web                  # https://localhost, pwd: labshock/labshock
-PLC          # OpenPLC              # http://localhost:8080, pwd: openplc/openplc
-SCADA        # FUXA                 # http://localhost:1881
-EWS          # Linux                # http://localhost:5911/vnc.html, pwd: engineer
-PENTEST      # Pentest Fury         # http://localhost:3443, pwd: pentest/pentest
-IDS          # Network Swiftness    # http://localhost:1443
-COLLECTOR    # Tidal Collector      # http://localhost:2443
-TRANSFER     # HTTP/FTP Server      # http://localhost:4443
-FIREWALL     # Linux Based          # http://localhost:5443
-And more...
-```
-
-
-<br><br>
 ## :yellow_square: Portal
 
-> central hub
+> heart of Labshock
 
 Labshock contains Portal for accessing all services, documentation and resources:  
 - access all Labshock services
@@ -160,10 +134,7 @@ PLC supports protocols:
 - DNP3
 - S7 (soon)
 
-Usage:
-- open http://localhost:8080
-- user/password `openplc/openplc`
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/PLC-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/PLC-service)
 
 <p align="center">
   <img src="img/plc.png" alt="plc" />
@@ -183,10 +154,7 @@ SCADA supports protocols:
 - MQTT
 - S7
 
-Usage:
-- open http://localhost:1881
-- user/password you can set in settings
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
 <p align="center">
   <img src="img/scada.png" alt="scada" />
@@ -208,9 +176,7 @@ Labshock’s learning station for OT/ICS protocol exploration:
 - practice custom exercises in isolated lab
 - learn different defensive techniques
 
-Usage:
-- open http://localhost:3443
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Pentest-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/Pentest-service)
   
 🔒 License:
 
@@ -239,9 +205,7 @@ Labshock includes Network Swiftness for real-time network monitoring and analysi
 - capture, analyze and save packets
 - web based: simple & easy
 
-Usage:
-- open http://localhost:1443
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/IDS-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/IDS-service)
 
 ⚠️ Windows/Mac Users:
 - navigate to Settings > Resources > Network, and check the "Enable host networking" option.
@@ -272,10 +236,7 @@ Efficient OT data collection and forwarding:
 - lightweight and efficient
 - web based: simple & easy
 
-Usage:
-
-- open http://localhost:2443
-- find more info on [wiki](https://github.com/zakharb/labshock/wiki/Collector-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/Collector-service)
 
 🔒 License:
 
@@ -297,13 +258,7 @@ Engineering Station for programming SCADA and PLC:
 - Interface to SCADA
 - Saved PLC/SCADA projects
 
-Usage:
-
-- login http://localhost:5911/vnc.html
-- password `engineer`
-- access PLC/SCADA via browser
-- access IDE via OpenPLC Editor
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/EWS-service)
 
 <p align="center">
   <img src="img/ews.png" alt="ews" />
@@ -333,11 +288,6 @@ Firewall service allows you to simulate and explore network segmentation in OT e
 - test segmentation controls
 - block / allow traffic
 
-Usage:
-
-- open http://localhost:5443
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Firewall-service)
-
 <p align="center">
   <img src="img/firewall.png" alt="firewall" />
 </p>
@@ -354,10 +304,7 @@ Transfer service simulates typical IT/OT file transfer scenarios:
 - check segmentation in controlled labs  
 - observe and learn traffic flows
 
-Usage:
-
-- open http://localhost:4443
-- check more info on [wiki](https://github.com/zakharb/labshock/wiki/Transfer-service)
+Usage: [wiki](https://github.com/zakharb/labshock/wiki/Transfer-service)
 
 <p align="center">
   <img src="img/transfer.png" alt="transfer" />
@@ -375,9 +322,6 @@ Labshock can forward OT events directly into your SIEM:
 - send events from OpenPLC, SCADA, IDS, and more
 - real OT data for correlation and detection testing
 
-Usage:
-- open Portal IT section
-- click start/connect
 <p align="center"> <img src="https://github.com/user-attachments/assets/86b98adb-3abc-48ac-807f-bba046ac097c" />  </p>
 
 - login to your SIEM (here is Splunk)
