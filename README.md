@@ -113,7 +113,7 @@ Usage:
 - check more info on [wiki](https://github.com/zakharb/labshock/wiki/Portal-service)
 
 <p align="center">
-  <img src="img/portal.png" alt="portal" />
+  <img  alt="portal" src="https://github.com/user-attachments/assets/10235967-c0b5-4db2-a0e7-02c0a09672d0"/>
 </p>
 
 <br><br>
@@ -157,7 +157,7 @@ SCADA supports protocols:
 Usage: [wiki](https://github.com/zakharb/labshock/wiki/SCADA-service)
 
 <p align="center">
-  <img src="img/scada.png" alt="scada" />
+  <img alt="scada" src="https://github.com/user-attachments/assets/a9042866-95c3-44d9-972c-a61d150d6525" />
 </p>
 
 
