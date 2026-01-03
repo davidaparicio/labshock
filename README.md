@@ -22,7 +22,9 @@ It enables safe experimentation with industrial systems that are normally inacce
 
 Labshock is not a simulator.
 
-It is a controlled OT security laboratory.Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
+Labshock is a controlled OT security laboratory.
+
+oLabshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
 
 
 <p align="center">
@@ -69,13 +71,13 @@ The World provides structure, continuity, and increasing complexity - while rema
 ## 🟨 Key Capabilities
 > why Labshock
 
-- Real industrial protocols and authentic OT traffic  
-- Hands-on interaction with ICS components  
-- Event and log generation from OT environments  
-- Safe execution of offensive techniques & tactics
+- real industrial protocols and authentic OT traffic  
+- hands-on interaction with ICS components  
+- event and log generation from OT environments  
+- safe execution of offensive techniques & tactics
 - SIEM-focused visibility, analysis & correlation  
-- Progressive learning from fundamentals to advanced detection  
-- Repeatable, isolated & controlled lab environments  
+- progressive learning from fundamentals to advanced detection  
+- repeatable, isolated & controlled lab environments  
 
 <img alt="world of labshock" src="https://github.com/user-attachments/assets/6065aa03-94f4-4c1c-9046-55d0caa0d504" />
 
@@ -83,11 +85,11 @@ The World provides structure, continuity, and increasing complexity - while rema
 > how it works
 
 Labshock is built around event-driven OT security understanding:
-- Hands-on first, theory when needed  
-- Focus on system behavior, not tools  
-- Learn from real events, not synthetic alerts  
-- Distinguish faults from attacks through evidence  
-- Build detection logic grounded in operational reality  
+- hands-on first, theory when needed  
+- focus on system behavior, not tools  
+- learn from real events, not synthetic alerts  
+- distinguish faults from attacks through evidence  
+- build detection logic grounded in operational reality  
 
 This approach creates skills that transfer directly to real OT environments.
 <img  alt="Key Capabilities" src="https://github.com/user-attachments/assets/3532a71c-c94d-4e2e-90cc-17efba3d3ed2" />
@@ -104,7 +106,7 @@ This approach creates skills that transfer directly to real OT environments.
 ## 🟨 What gives you Labshock
 - build a complete OT test lab in less than 10 minutes  
 - deploy a full OT/ICS cyber range with SCADA & PLC & EWS & DMZ
-- Capture traffic, test SIEM rules and refine IDS detection in a safe lab  
+- capture traffic, test SIEM rules and refine IDS detection in a safe lab  
 - learn OT & ICS fundamentals
 - check industrial protocol behavior
 - do event and telemetry collection
@@ -136,7 +138,7 @@ When you run Labshock without a license, it starts in trial mode:
 
 - 5-minute initialization delay  
 - 40-minute session limit (can restart as needed)  
-- Unlimited restarts  
+- unlimited restarts  
 
 Reach out for long-term use, education, or enterprise deployments.
 
@@ -158,20 +160,13 @@ Videos: [Linux](https://youtu.be/CGpizCGcHBc) [Windows](https://youtu.be/7PkIeSX
 The Labshock Portal is the central interface and command center for navigating the World of Labshock.
 
 Main Portal Sections:
-- Profile
-Track your progression from Level 1 to 60, including XP, achievements, and skills earned through hands-on actions.
-- Guides
-Theory and practical playbooks tightly connected to zones, quests, and labs.
-- Quests
-Clear objectives defining what to do next, what to focus on, and what concepts you unlock.
-- Zones
-A world map of 10 zones, each representing a new layer of OT security complexity.
-- Shockzone
-Your current location, showing zone-specific quests, guides, and contextual explanations.
-- Shocklab
-Launch and control OT labs, start and stop services, and interact with logs and traffic.
-- Labs
-Build custom lab setups to experiment freely and reproduce real-world scenarios.
+- track your progression from Level 1 to 60, including XP, achievements, and skills earned through hands-on actions
+- theory and practical playbooks tightly connected to zones, quests, and labs
+- clear objectives defining what to do next, what to focus on, and what concepts you unlock
+- world map of 10 zones, each representing a new layer of OT security complexity
+- your current location, showing zone-specific quests, guides, and contextual explanations
+- launch and control OT labs, start and stop services, and interact with logs and traffic
+- build custom lab setups to experiment freely and reproduce real-world scenarios
 
 <p align="center">
   <img  alt="portal" src="https://github.com/user-attachments/assets/2eb7782f-3c9f-4ee3-8eed-484a7cec8e30" />
