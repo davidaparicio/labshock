@@ -349,9 +349,9 @@ Labshock can forward OT events directly into your SIEM:
 <br><br>
 ## 🟨 Use Policy
 
-Labshock is for educational and training purposes only.
+Labshock is for educational, testing and training purposes only.
   
-Not allowed to use against production, third-party, or real-world systems.    
+Not allowed to use against production, third-party or real-world systems.    
 
 <br><br>
 ## 🟨 License
