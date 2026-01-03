@@ -335,7 +335,7 @@ Usage: [wiki](https://github.com/zakharb/labshock/wiki/Transfer-service)
 
 Labshock can forward OT events directly into your SIEM:
 
-- ready Splunk integration (community request)
+- ready Splunk/ELK integration
 - collectors pre-configured for quick setup
 - supports log forwarding to any SIEM
 - send events from OpenPLC, SCADA, IDS, and more
@@ -350,16 +350,15 @@ Labshock can forward OT events directly into your SIEM:
 ## 🟨 Use Policy
 
 Labshock is for educational and training purposes only.
-
-- Allowed: personal, academic and non-commercial lab use.  
-- Not allowed: use against production, third-party, or real-world systems.  
-- Not allowed: redistribution, modification, or commercial use without license.  
-- External open-source tools retain their own licenses.  
+  
+Not allowed to use against production, third-party, or real-world systems.    
 
 <br><br>
 ## 🟨 License
 
 © 2026 Labshock Security 
 Labshock contains open-source and proprietary components.   
+For any commercial use required Enterprise License.
+Pro License is only for personal individual isage, not company.
 See the [LICENSE](LICENSE) file for details.  
 
