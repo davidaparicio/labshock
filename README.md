@@ -19,6 +19,7 @@ The author is not responsible for any misuse, data loss, or legal issues that ma
 Labshock is a practical, environment-driven platform for learning and practicing Operational Technology (OT) and ICS security using real industrial components, real protocols and real telemetry.
 
 It enables safe experimentation with industrial systems that are normally inaccessible, fragile, or safety-critical in production environments.
+
 Labshock is not a simulator.
 
 It is a controlled OT security laboratory.Labshock provides a ready-to-use environment to learn, simulate and test defensive strategies.
