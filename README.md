@@ -148,7 +148,6 @@ Reach out for long-term use, education, or enterprise deployments.
 > ⚠️ Disclaimer You are running this lab at your own risk. Labshock is intended for educational and lawful testing in isolated environments only. The author is not responsible for any damage, data loss, legal issues, or misuse of this tool. Never run Labshock or its components against production systems or networks you do not own or have explicit permission to test.
 
 Guide: [Quickstart](https://github.com/zakharb/labshock/wiki/Quickstart-Guide)  
-Videos: [Linux](https://youtu.be/CGpizCGcHBc) [Windows](https://youtu.be/7PkIeSX6q6g)  
 
 
 <br><br>
