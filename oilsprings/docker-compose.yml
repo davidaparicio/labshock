@@ -59,7 +59,7 @@ services:
     ports:
       - "443:443"   
     environment:
-      PORTAL_VERSION: 2.0.2
+      PORTAL_VERSION: 2.0.0
       PLATFORM_URL: https://world.labshocksecurity.com
 
   router:
