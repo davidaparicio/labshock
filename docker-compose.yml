@@ -1,4 +1,4 @@
-name: labshock
+name: labshock-test
 
 networks:
   portal_network:
@@ -6,9 +6,9 @@ networks:
 
 services:
   portal:
-    image: zakharbz/labshock-portal:latest
+    image: zakharbz/labshock-portal:v2.2.12
     ports:
-      - '443:443'
+      - '33443:443'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portal-data:/app/config/
