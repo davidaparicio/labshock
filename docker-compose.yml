@@ -1,4 +1,4 @@
-name: labshock-test
+name: labshock
 
 networks:
   portal_network:
@@ -6,7 +6,7 @@ networks:
 
 services:
   portal:
-    image: zakharbz/labshock-portal:v2.2.12
+    image: zakharbz/labshock-portal:latest
     ports:
       - '33443:443'
     volumes:
